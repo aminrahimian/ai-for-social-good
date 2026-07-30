@@ -43,9 +43,89 @@ The Tutorial Guide below explains the Level 1 and Level 2 topics for each notebo
 
 This chart follows the organization and main distinctions used in *An Introduction to Statistical Learning*. It shows the major topic families and only the connections that help explain what should be understood before moving into a later topic. Level 1 and Level 2 are intentionally left out here so the chart stays clean and readable.
 
-<p align="center">
-  <img src="./course-concept-map.svg" alt="IE 1171 course concept map" width="1000">
-</p>
+```mermaid
+flowchart TB
+
+    subgraph FOUND["Foundations"]
+        direction TB
+        T0(["Tutorial 0<br/>Human–AI Problem Solving"]) --> T0P2(["Tutorial 0 Part 2<br/>Agentic Workflows and GitHub"]) --> T1(["Tutorial 1<br/>Data Understanding and Exploration"])
+    end
+
+    CORE(["Statistical Learning<br/>Foundations"])
+    T1 --> CORE
+
+    subgraph ROW1[" "]
+        direction LR
+
+        subgraph REGBOX["Regression and Model Building"]
+            direction LR
+            REG(["Regression"])
+            T2(["Tutorial 2<br/>Linear Regression"]) --> T3(["Tutorial 3<br/>Model Selection and Regularization"])
+            REG --> T2
+        end
+
+        subgraph CLASSBOX["Classification Methods"]
+            direction LR
+            CLASSTOP(["Classification"])
+            CLASSTOP --> T4(["Tutorial 4<br/>Logistic Regression"])
+            CLASSTOP --> T6(["Tutorial 6<br/>Naive Bayes"])
+            CLASSTOP --> T7(["Tutorial 7<br/>K-Nearest Neighbors"])
+        end
+
+        subgraph TESTBOX["Model Assessment and Testing"]
+            direction LR
+            TESTTOP(["Assessment"])
+            TESTTOP --> T5(["Tutorial 5<br/>A/B and Multiple Testing"])
+        end
+
+        subgraph UNSUPBOX["Unsupervised Learning"]
+            direction LR
+            UNSUPTOP(["Unsupervised"])
+            UNSUPTOP --> T10(["Tutorial 10<br/>Principal Component Analysis"])
+            UNSUPTOP --> T11(["Tutorial 11<br/>Clustering"])
+        end
+    end
+
+    subgraph ROW2[" "]
+        direction LR
+
+        subgraph FLEXBOX["Flexible and Nonlinear Methods"]
+            direction LR
+            FLEXTOP(["Flexible Methods"])
+            FLEXTOP --> NONPAR(["Moving Beyond Linearity<br/>No tutorial yet"])
+            FLEXTOP --> T8(["Tutorial 8<br/>Decision Trees and Boosting"])
+            FLEXTOP --> T9(["Tutorial 9<br/>Support Vector Machines"])
+        end
+
+        subgraph DEEPBOX["Deep Learning and Transformers"]
+            direction LR
+            DEEPTOP(["Deep Learning"])
+            DEEPTOP --> T12(["Tutorial 12<br/>Deep Learning"]) --> T13(["Tutorial 13<br/>Transformer Fine-Tuning"])
+        end
+    end
+
+    CORE --> REG
+    CORE --> CLASSTOP
+    CORE --> TESTTOP
+    CORE --> UNSUPTOP
+    REG --> FLEXTOP
+    CLASSTOP --> FLEXTOP
+    FLEXTOP --> DEEPTOP
+    TESTTOP -. supports .-> T3
+
+    style ROW1 fill:none,stroke:none
+    style ROW2 fill:none,stroke:none
+
+    classDef foundation fill:#EAF2F8,stroke:#2B5D7D,color:#173247,stroke-width:2px;
+    classDef topic fill:#EAF6F2,stroke:#2D7B6F,color:#174A43,stroke-width:1.8px;
+    classDef tutorial fill:#FFFFFF,stroke:#6B7280,color:#111827,stroke-width:1.4px;
+    classDef empty fill:#F7F7F7,stroke:#999999,color:#666666,stroke-width:1.4px,stroke-dasharray:5 4;
+
+    class T0,T0P2,T1,CORE foundation;
+    class REG,CLASSTOP,TESTTOP,FLEXTOP,DEEPTOP,UNSUPTOP topic;
+    class T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13 tutorial;
+    class NONPAR empty;
+```
 
 ### How to read the chart
 
