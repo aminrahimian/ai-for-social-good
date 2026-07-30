@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="670" viewBox="0 0 1000 670" role="img" aria-labelledby="title desc">
+  <title id="title">IE 1171 course concept map</title>
+  <desc id="desc">A compact concept map connecting the course foundations to regression, classification, model assessment, unsupervised learning, flexible methods, deep learning, and transformer fine-tuning.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font: 700 18px Arial, Helvetica, sans-serif; fill: #18354a; }
+      .topic { font: 700 15px Arial, Helvetica, sans-serif; fill: #174a43; }
+      .body { font: 14px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .small { font: 13px Arial, Helvetica, sans-serif; fill: #374151; }
+      .muted { font: italic 12px Arial, Helvetica, sans-serif; fill: #6b7280; }
+      .edge { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #94a3b8; stroke-width: 1.8; stroke-dasharray: 6 5; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="670" rx="20" fill="#ffffff"/>
+
+  <!-- Foundations -->
+  <rect x="35" y="28" width="405" height="172" rx="18" fill="#eef6fb" stroke="#2b5d7d" stroke-width="2"/>
+  <text x="237.5" y="56" text-anchor="middle" class="title">Foundations</text>
+  <rect x="58" y="72" width="112" height="96" rx="13" fill="#ffffff" stroke="#6b7280" stroke-width="1.4"/>
+  <text x="114" y="98" text-anchor="middle" class="body">
+    <tspan x="114" dy="0">Tutorial 0</tspan>
+    <tspan x="114" dy="20">Human–AI</tspan>
+    <tspan x="114" dy="18">Problem Solving</tspan>
+  </text>
+  <rect x="181" y="72" width="120" height="96" rx="13" fill="#ffffff" stroke="#6b7280" stroke-width="1.4"/>
+  <text x="241" y="94" text-anchor="middle" class="small">
+    <tspan x="241" dy="0">Tutorial 0 Part 2</tspan>
+    <tspan x="241" dy="20">Agentic Workflows</tspan>
+    <tspan x="241" dy="18">and GitHub</tspan>
+  </text>
+  <rect x="312" y="72" width="105" height="96" rx="13" fill="#ffffff" stroke="#6b7280" stroke-width="1.4"/>
+  <text x="364.5" y="98" text-anchor="middle" class="small">
+    <tspan x="364.5" dy="0">Tutorial 1</tspan>
+    <tspan x="364.5" dy="20">Data Understanding</tspan>
+    <tspan x="364.5" dy="18">and Exploration</tspan>
+  </text>
+  <path d="M170 120 L181 120" class="edge"/>
+  <path d="M301 120 L312 120" class="edge"/>
+
+  <!-- Statistical learning foundations -->
+  <rect x="585" y="52" width="365" height="120" rx="60" fill="#e8f5f1" stroke="#2d7b6f" stroke-width="2"/>
+  <text x="767.5" y="82" text-anchor="middle" class="topic">Statistical Learning Foundations</text>
+  <text x="767.5" y="108" text-anchor="middle" class="small">
+    <tspan x="767.5" dy="0">Prediction and inference</tspan>
+    <tspan x="767.5" dy="18">Supervised and unsupervised learning</tspan>
+    <tspan x="767.5" dy="18">Regression and classification</tspan>
+  </text>
+  <path d="M440 114 C505 114 520 112 585 112" class="edge"/>
+
+  <!-- Core topic cards -->
+  <rect x="20" y="270" width="220" height="164" rx="16" fill="#fffdf0" stroke="#c7b84f" stroke-width="1.6"/>
+  <text x="130" y="292" text-anchor="middle" class="topic">
+    <tspan x="130" dy="0">Regression and</tspan>
+    <tspan x="130" dy="18">Model Building</tspan>
+  </text>
+  <text x="44" y="340" class="body">
+    <tspan x="44" dy="0">Tutorial 2 — Linear Regression</tspan>
+    <tspan x="44" dy="28">Tutorial 3 — Model Selection</tspan>
+    <tspan x="44" dy="19">and Regularization</tspan>
+  </text>
+
+  <rect x="265" y="270" width="220" height="164" rx="16" fill="#fffdf0" stroke="#c7b84f" stroke-width="1.6"/>
+  <text x="375" y="299" text-anchor="middle" class="topic">Classification Methods</text>
+  <text x="289" y="340" class="body">
+    <tspan x="289" dy="0">Tutorial 4 — Logistic Regression</tspan>
+    <tspan x="289" dy="28">Tutorial 6 — Naive Bayes</tspan>
+    <tspan x="289" dy="28">Tutorial 7 — KNN</tspan>
+  </text>
+
+  <rect x="510" y="270" width="220" height="164" rx="16" fill="#fffdf0" stroke="#c7b84f" stroke-width="1.6"/>
+  <text x="620" y="292" text-anchor="middle" class="topic">
+    <tspan x="620" dy="0">Model Assessment</tspan>
+    <tspan x="620" dy="18">and Testing</tspan>
+  </text>
+  <text x="534" y="340" class="body">
+    <tspan x="534" dy="0">Tutorial 5 — A/B Testing</tspan>
+    <tspan x="534" dy="28">Multiple testing and p-hacking</tspan>
+    <tspan x="534" dy="28">Supports model comparison</tspan>
+  </text>
+
+  <rect x="755" y="270" width="220" height="164" rx="16" fill="#fffdf0" stroke="#c7b84f" stroke-width="1.6"/>
+  <text x="865" y="299" text-anchor="middle" class="topic">Unsupervised Learning</text>
+  <text x="779" y="340" class="body">
+    <tspan x="779" dy="0">Tutorial 10 — Principal</tspan>
+    <tspan x="779" dy="19">Component Analysis</tspan>
+    <tspan x="779" dy="28">Tutorial 11 — Clustering</tspan>
+  </text>
+
+  <!-- Arrows from statistical foundations -->
+  <path d="M700 166 C620 215 210 210 130 270" class="edge"/>
+  <path d="M742 171 C675 220 450 220 375 270" class="edge"/>
+  <path d="M792 171 C760 220 665 220 620 270" class="edge"/>
+  <path d="M840 168 C850 220 860 230 865 270" class="edge"/>
+
+  <!-- Flexible methods -->
+  <rect x="120" y="500" width="380" height="142" rx="18" fill="#f4f0fa" stroke="#72549a" stroke-width="1.8"/>
+  <text x="310" y="530" text-anchor="middle" class="topic">Flexible and Nonlinear Methods</text>
+  <text x="146" y="562" class="body">
+    <tspan x="146" dy="0">Moving Beyond Linearity — no tutorial yet</tspan>
+    <tspan x="146" dy="25">Tutorial 8 — Decision Trees and Boosting</tspan>
+    <tspan x="146" dy="25">Tutorial 9 — Support Vector Machines</tspan>
+  </text>
+
+  <!-- Deep learning -->
+  <rect x="575" y="500" width="305" height="142" rx="18" fill="#f4f0fa" stroke="#72549a" stroke-width="1.8"/>
+  <text x="727.5" y="530" text-anchor="middle" class="topic">Deep Learning and Transformers</text>
+  <text x="602" y="562" class="body">
+    <tspan x="602" dy="0">Tutorial 12 — Deep Learning</tspan>
+    <tspan x="602" dy="27">Tutorial 13 — Transformer Fine-Tuning</tspan>
+  </text>
+
+  <!-- Lower connections -->
+  <path d="M130 434 C150 468 220 474 270 500" class="edge"/>
+  <path d="M375 434 C380 468 350 474 335 500" class="edge"/>
+  <path d="M500 571 C530 571 545 571 575 571" class="edge"/>
+  <path d="M620 434 C565 452 495 455 440 500" class="dash"/>
+
+  <!-- Legend -->
+  <line x1="770" y1="660" x2="812" y2="660" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="820" y="664" class="muted">needed first</text>
+  <line x1="610" y1="660" x2="652" y2="660" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text x="660" y="664" class="muted">supports or connects</text>
+</svg>
