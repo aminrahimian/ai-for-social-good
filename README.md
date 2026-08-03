@@ -2,7 +2,7 @@
 
 ## Learn statistical methods while working carefully with AI
 
-> **Repository status:** This README shows the full planned tutorial series from Tutorials 0–13. The current uploaded bundle includes Tutorials 0–9 and 11–13.
+> **Repository status:** Tutorials 0–13 and Tutorial 0 Part 2 are included in this version.
 
 These Jupyter notebook tutorials are made to help students learn statistics, machine learning, and modern AI in a more guided way. The goal is not to let AI do the work for the student. The goal is to show how AI can help with thinking, coding, checking, and learning while the human still stays in control.
 
@@ -30,7 +30,7 @@ Every tutorial follows the same general design:
 
 ### Level 1 and Level 2
 
-This is a core feature of the product.
+This is a core feature of the tutorial series.
 
 - **Level 1** is the main lesson and the required foundation.
 - **Level 2** is the deeper extension. It builds on Level 1 and pushes the topic further.
@@ -53,7 +53,7 @@ This chart follows the organization and main distinctions used in *An Introducti
 - Each large box is a **main book topic area**, and the tutorials inside it belong to that area.
 - The smaller shapes inside each box are the key ideas that connect to the tutorials in that area.
 - Regression and classification feed into later flexible methods, and deep learning comes after that.
-- The compact **Moving Beyond Linearity** box is included because it is a major book topic even though there is no separate tutorial for it yet.
+- The compact **Nonparametric Methods — No Tutorial** box is included to keep the chart aligned with the broader book topics.
 - Level 1 and Level 2 details are kept in the **Tutorial Guide** below, where they are easier to read.
 
 ---
@@ -111,9 +111,9 @@ Below is a short guide to the topics in the series.
   Use ChatGPT for planning and Codex for a bounded coding-agent loop involving repository inspection, file changes, tests, diffs, and human approval. Codex is currently available with ChatGPT Free, although free limits and availability may change.
 
 - **Tutorial 1 — Data Understanding and Exploration**  
-  **Level 1:** Data Understanding  
-  **Level 2:** Deeper Exploration  
-  Start with the research question, the codebook, the row of the dataset, feature meaning, and exploratory analysis.
+  **Level 1:** Exploratory Data Analysis  
+  **Level 2:** Data Wrangling  
+  Explore the research question, codebook, observations, variables, missingness, and patterns before preparing trustworthy data for later modeling.
 
 ### Statistical learning
 
@@ -144,10 +144,10 @@ Below is a short guide to the topics in the series.
   **Level 2:** Deeper Probabilistic Classification  
   Use Bayes’ rule for classification and think about priors, evidence, and strong independence assumptions.
 
-- **Tutorial 7 — K-Nearest Neighbors and Movie Recommendation**  
+- **Tutorial 7 — K-Nearest Neighbors and Recommender Systems**  
   **Level 1:** K-Nearest Neighbors  
-  **Level 2:** Movie Recommendation  
-  Learn distance-based prediction and then apply the same idea to recommendation.
+  **Level 2:** Recommender Systems  
+  Learn distance-based prediction and then apply the same idea to build and evaluate a recommender system.
 
 - **Tutorial 8 — Decision Trees and Boosting**  
   **Level 1:** Decision Trees  
@@ -185,9 +185,9 @@ Below is a short guide to the topics in the series.
 
   **Important note:** For the training part of this tutorial, a **GPU is needed**. A CPU may run very slowly or may not be practical for the full training steps used here. In Google Colab, use a GPU runtime.
 
-### Nonlinear and nonparametric methods
+### Nonparametric Methods — No Tutorial
 
-These topics are included in the chart for completeness, even though the current tutorial series does not yet have a separate notebook for them.
+This topic is included in the chart for completeness, but the current tutorial series does not have a separate notebook for it.
 
 ---
 
