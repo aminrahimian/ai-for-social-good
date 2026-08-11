@@ -1,14 +1,60 @@
 # IE 1171: AI for Social Good — Tutorial Series
 
-## Learn statistical methods while working carefully with AI
+## Learn statistical methods, work carefully with AI, and connect technical choices to social impact
 
-> **Repository status:** This README shows the full planned tutorial series from Tutorials 0–13. The current uploaded bundle includes Tutorials 0–9 and 11–13.
+> **Repository status:** Tutorials 0–13 and Tutorial 0 Part 2 are included in this version.
 
-These Jupyter notebook tutorials are made to help students learn statistics, machine learning, and modern AI in a more guided way. The goal is not to let AI do the work for the student. The goal is to show how AI can help with thinking, coding, checking, and learning while the human still stays in control.
+These Jupyter notebook tutorials are built around **two goals that run together**: learn statistics, machine learning, and modern AI, and learn how those tools should be used when data and models can affect people. This is not meant to be a list of machine-learning topics with an ethics note added at the end. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to a social-good application.
 
-Tutorial 0 uses Claude as a general thinking and coding partner. Tutorial 0 Part 2 uses ChatGPT and Codex so students can experience a real agentic coding loop with a free account. These tools can explain ideas, inspect files, draft or edit code, and help run checks, but they do not replace the student. The student still has to define the problem, control permissions, verify the code, explain the results, and take responsibility for the final answer.
+AI is used as a thinking and coding partner, not as a replacement for the student. Tutorial 0 uses Claude for human–AI problem solving. Tutorial 0 Part 2 uses ChatGPT and Codex for an agentic GitHub workflow. The student still has to define the problem, control permissions, understand the domain, verify the code and evidence, explain the result, and take responsibility for the final decision.
 
-> **Main idea:** Use AI for support and speed, but keep human judgment in control.
+> **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
+
+---
+
+## Social good is not an add-on
+
+The 2024 IE 1171 iteration made the social-good purpose concrete through public-interest applications and invited speakers. Students encountered misinformation on encrypted platforms, public algorithms and government procurement, disaster response and housing, public safety and renewable energy, human-centered AI, real-world deployment failures, civic open data, group fairness, food rescue, and the privacy/fairness trade-offs of the U.S. Census.
+
+This tutorial series keeps that same idea: **the method is only half of the lesson**. Every notebook includes a social-good section that connects the technical method to questions about people, institutions, privacy, fairness, deployment, and accountability.
+
+The recurring social-good questions are:
+
+- **Problem:** Are we solving the real human need or only the easiest measurable target?
+- **People:** Who is affected, who is missing from the data, and who should help define success?
+- **Errors:** Who experiences false positives, false negatives, large residuals, or worst-group performance?
+- **Privacy:** Are we collecting or inferring more information than the purpose requires?
+- **Fairness:** Which definition of fairness fits the actual harm, and what trade-offs does it create?
+- **Deployment:** What changes when the model leaves the notebook and enters a real organization or community?
+- **Accountability:** Who can review, challenge, override, or appeal a consequential result?
+
+### Social-good lens by tutorial
+
+| Tutorial | Technical focus | Social-good connection |
+|---|---|---|
+| **0** | Human–AI problem solving | Human-centered problem scoping, stakeholder knowledge, alternatives to AI, and learning from unintended consequences after deployment. |
+| **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
+| **1** | Data understanding and exploration | Trustworthy civic/public-interest data: context, representation, missingness, privacy, data literacy, and community knowledge before modeling. |
+| **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
+| **3** | Model selection and regularization | Feature choice changes the intervention; connect simplification to privacy, proxies, group error, feedback, and real-world monitoring. |
+| **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
+| **5** | A/B and multiple testing | Experiments that affect real people: ethical randomization, meaningful outcomes, unintended consequences, replication, and careful rollout. |
+| **6** | Naive Bayes | Proactive decision support in health, public safety, energy, and other uncertain settings without turning probabilities into automatic decisions. |
+| **7** | KNN and recommender systems | Recommendation shapes exposure, popularity, choice, and future data; examine feedback loops, subgroup performance, and privacy. |
+| **8** | Decision trees and boosting | Accuracy versus consequence and group fairness: forbidden/proxy inputs, worst-group error, competing fairness goals, and expert oversight. |
+| **9** | Support vector machines | Digital-platform prediction can shape attention and opportunity; evaluate targeting objectives, proxies, minority performance, and opacity. |
+| **10** | PCA and PCR | Statistical compression can erase low-variance but socially important signals; test representation with stakeholders and in deployment. |
+| **11** | Clustering | Segmentation can support service planning but can also become unequal treatment; clusters are analytical choices, not natural identities. |
+| **12** | Deep learning | Flexible models require stronger validation, privacy, subgroup checks, human-centered explanations, appeal, and post-deployment monitoring. |
+| **13** | Transformer fine-tuning | Privacy-preserving redaction versus surveillance: data minimization, recall, external stress testing, and purpose-limited deployment. |
+
+> **About _The Ethical Algorithm_:** ideas from the book and from the 2024 course discussions are used as **background design guidance for these social-good sections**. They are not automatically additional assigned readings in the revised notebooks. The statistical assigned readings remain focused on Pólya, ISLP, GitHub documentation, or the tutorial-specific technical source.
+
+### Pólya is the problem-solving backbone
+
+Every notebook uses George Pólya’s four-step cycle—**Understand the Problem → Devise a Plan → Carry Out the Plan → Look Back**—as the common problem-solving structure. The four colored Pólya checkpoints are intentionally more prominent than the normal tutorial symbols. Students can return to an earlier step whenever the data, code, or domain evidence shows that the original framing was incomplete.
+
+Human Checks are also intentionally **not complete checklists**. The notebooks can provide useful generic questions, but a serious check depends on domain expertise. Students are expected to add their own domain question or involve someone with the relevant expertise when the consequences of an error matter.
 
 ---
 
@@ -16,6 +62,7 @@ Tutorial 0 uses Claude as a general thinking and coding partner. Tutorial 0 Part
 
 Every tutorial follows the same general design:
 
+- a common **Pólya four-step problem-solving backbone** with visible checkpoints throughout the notebook;
 - **three main learning objectives** with smaller sub-points;
 - **assigned reading** tied to the notebook topic;
 - **theory** connected to the code;
@@ -26,11 +73,11 @@ Every tutorial follows the same general design:
 - **Your Workspace** cells for student work;
 - **Reference Solutions** for comparison;
 - **Human Check** and **Look Back** sections;
-- an **AI for social good** connection.
+- an **AI for social good** application that is tied to the method, the data, the Human Checks, and the final interpretation.
 
 ### Level 1 and Level 2
 
-This is a core feature of the product.
+This is a core feature of the tutorial series.
 
 - **Level 1** is the main lesson and the required foundation.
 - **Level 2** is the deeper extension. It builds on Level 1 and pushes the topic further.
@@ -41,7 +88,7 @@ The Tutorial Guide below explains the Level 1 and Level 2 topics for each notebo
 
 ## Course concept chart
 
-This chart follows the organization and main distinctions used in *An Introduction to Statistical Learning*. It shows the major topic families and only the connections that help explain what should be understood before moving into a later topic. Level 1 and Level 2 are intentionally left out here so the chart stays clean and readable.
+This chart is the **technical learning map**. It follows the organization and main distinctions used in *An Introduction to Statistical Learning with Applications in Python* and shows the major method families and prerequisite connections. The social-good thread is shown separately above because it runs across every branch rather than belonging to one machine-learning topic. Level 1 and Level 2 are intentionally left out here so the chart stays clean and readable.
 
 <p align="center">
   <img src="./course-concept-map.svg" alt="IE 1171 course concept map" width="1000">
@@ -53,7 +100,7 @@ This chart follows the organization and main distinctions used in *An Introducti
 - Each large box is a **main book topic area**, and the tutorials inside it belong to that area.
 - The smaller shapes inside each box are the key ideas that connect to the tutorials in that area.
 - Regression and classification feed into later flexible methods, and deep learning comes after that.
-- The compact **Moving Beyond Linearity** box is included because it is a major book topic even though there is no separate tutorial for it yet.
+- The compact **Nonparametric Methods — No Tutorial** box is included to keep the chart aligned with the broader book topics.
 - Level 1 and Level 2 details are kept in the **Tutorial Guide** below, where they are easier to read.
 
 ---
@@ -62,10 +109,10 @@ This chart follows the organization and main distinctions used in *An Introducti
 
 By the end of the series, students should be able to:
 
-### 1. Work with AI in a careful and useful way
-- Break a broad task into smaller steps.
-- Use AI for support without handing over all control.
-- Check whether an AI answer actually makes sense.
+### 1. Solve problems with AI without giving up human control
+- Use Pólya’s four-step cycle to understand, plan, carry out, and look back.
+- Break a broad task into smaller, checkable steps.
+- Use AI for support while keeping permissions, verification, and final responsibility with the human.
 
 ### 2. Understand data before modeling
 - Identify the response, predictors, rows, and units.
@@ -87,10 +134,10 @@ By the end of the series, students should be able to:
 - See how a task-specific transformer differs from a tool like Claude.
 - Understand the difference between using a model and training one.
 
-### 6. Use models responsibly
-- Think about limits, errors, and possible harm.
-- Protect privacy and avoid claims the data cannot support.
-- Keep a human responsible for interpretation and decisions.
+### 6. Connect technical work to social good
+- Identify who may benefit, who may be harmed, and which errors matter in the application domain.
+- Use domain knowledge to check assumptions, measurements, proxies, thresholds, and model limits rather than relying on a generic checklist.
+- Protect privacy, communicate uncertainty, avoid claims the data cannot support, and keep accountable human review for consequential decisions.
 
 ---
 
@@ -111,9 +158,9 @@ Below is a short guide to the topics in the series.
   Use ChatGPT for planning and Codex for a bounded coding-agent loop involving repository inspection, file changes, tests, diffs, and human approval. Codex is currently available with ChatGPT Free, although free limits and availability may change.
 
 - **Tutorial 1 — Data Understanding and Exploration**  
-  **Level 1:** Data Understanding  
-  **Level 2:** Deeper Exploration  
-  Start with the research question, the codebook, the row of the dataset, feature meaning, and exploratory analysis.
+  **Level 1:** Exploratory Data Analysis  
+  **Level 2:** Data Wrangling  
+  Explore the research question, codebook, observations, variables, missingness, and patterns before preparing trustworthy data for later modeling.
 
 ### Statistical learning
 
@@ -144,10 +191,10 @@ Below is a short guide to the topics in the series.
   **Level 2:** Deeper Probabilistic Classification  
   Use Bayes’ rule for classification and think about priors, evidence, and strong independence assumptions.
 
-- **Tutorial 7 — K-Nearest Neighbors and Movie Recommendation**  
+- **Tutorial 7 — K-Nearest Neighbors and Recommender Systems**  
   **Level 1:** K-Nearest Neighbors  
-  **Level 2:** Movie Recommendation  
-  Learn distance-based prediction and then apply the same idea to recommendation.
+  **Level 2:** Recommender Systems  
+  Learn distance-based prediction and then apply the same idea to build and evaluate a recommender system.
 
 - **Tutorial 8 — Decision Trees and Boosting**  
   **Level 1:** Decision Trees  
@@ -185,9 +232,9 @@ Below is a short guide to the topics in the series.
 
   **Important note:** For the training part of this tutorial, a **GPU is needed**. A CPU may run very slowly or may not be practical for the full training steps used here. In Google Colab, use a GPU runtime.
 
-### Nonlinear and nonparametric methods
+### Nonparametric Methods — No Tutorial
 
-These topics are included in the chart for completeness, even though the current tutorial series does not yet have a separate notebook for them.
+This topic is included in the chart for completeness, but the current tutorial series does not have a separate notebook for it.
 
 ---
 
@@ -245,6 +292,6 @@ Do not trust an answer only because it sounds confident or the code runs. Always
 
 ## Responsible use
 
-These notebooks are for learning. A model working well in a notebook does not automatically mean it should be used in a real decision that affects people.
+These notebooks are for learning, but the social-good questions are treated as part of the technical work. A model working well in a notebook does not automatically mean it should be used in a real decision that affects people.
 
-Human judgment, domain knowledge, checking, privacy protection, and care about who may be helped or harmed still matter throughout the whole series.
+Human judgment, domain knowledge, checking, privacy protection, uncertainty, and attention to who may be helped or harmed matter throughout the whole series. When students cannot answer a Human Check from their own expertise, the correct next step is not to guess—it is to identify what expertise or evidence is missing.
