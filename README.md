@@ -12,23 +12,7 @@ AI is used as a thinking and coding partner, not as a replacement for the studen
 
 ---
 
-## Social good is not an add-on
-
-The 2024 IE 1171 iteration made the social-good purpose concrete through public-interest applications and invited speakers. Students encountered misinformation on encrypted platforms, public algorithms and government procurement, disaster response and housing, public safety and renewable energy, human-centered AI, real-world deployment failures, civic open data, group fairness, food rescue, and the privacy/fairness trade-offs of the U.S. Census.
-
-This tutorial series keeps that same idea: **the method is only half of the lesson**. Every notebook includes a social-good section that connects the technical method to questions about people, institutions, privacy, fairness, deployment, and accountability.
-
-The recurring social-good questions are:
-
-- **Problem:** Are we solving the real human need or only the easiest measurable target?
-- **People:** Who is affected, who is missing from the data, and who should help define success?
-- **Errors:** Who experiences false positives, false negatives, large residuals, or worst-group performance?
-- **Privacy:** Are we collecting or inferring more information than the purpose requires?
-- **Fairness:** Which definition of fairness fits the actual harm, and what trade-offs does it create?
-- **Deployment:** What changes when the model leaves the notebook and enters a real organization or community?
-- **Accountability:** Who can review, challenge, override, or appeal a consequential result?
-
-### Social-good lens by tutorial
+## Social-good lens by tutorial
 
 | Tutorial | Technical focus | Social-good connection |
 |---|---|---|
@@ -47,8 +31,6 @@ The recurring social-good questions are:
 | **11** | Clustering | Segmentation can support service planning but can also become unequal treatment; clusters are analytical choices, not natural identities. |
 | **12** | Deep learning | Flexible models require stronger validation, privacy, subgroup checks, human-centered explanations, appeal, and post-deployment monitoring. |
 | **13** | Transformer fine-tuning | Privacy-preserving redaction versus surveillance: data minimization, recall, external stress testing, and purpose-limited deployment. |
-
-> **About _The Ethical Algorithm_:** ideas from the book and from the 2024 course discussions are used as **background design guidance for these social-good sections**. They are not automatically additional assigned readings in the revised notebooks. The statistical assigned readings remain focused on Pólya, ISLP, GitHub documentation, or the tutorial-specific technical source.
 
 ### Pólya is the problem-solving backbone
 
