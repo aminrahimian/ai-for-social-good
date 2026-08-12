@@ -4,11 +4,13 @@
 
 > **Repository status:** Tutorials 0–13 and Tutorial 0 Part 2 are included in this version.
 
-These Jupyter notebook tutorials are built around **two goals that run together**: learn statistics, machine learning, and modern AI, and learn how those tools should be used when data and models can affect people. This is not meant to be a list of machine-learning topics with an ethics note added at the end. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to a social-good application.
+These Jupyter notebook tutorials are built around **two goals that run together**: learn statistics, machine learning, and modern AI, and learn how those tools should be used when data and models can affect people. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
 
 AI is used as a thinking and coding partner, not as a replacement for the student. Tutorial 0 uses Claude for human–AI problem solving. Tutorial 0 Part 2 uses ChatGPT and Codex for an agentic GitHub workflow. The student still has to define the problem, control permissions, understand the domain, verify the code and evidence, explain the result, and take responsibility for the final decision.
 
 > **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
+
+Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_ provide a recurring foundation for privacy, fairness, bias, and real-world deployment. They are assigned in the tutorials where those concepts directly support the technical method and social-good application.
 
 ---
 
@@ -46,7 +48,7 @@ Every tutorial follows the same general design:
 
 - a common **Pólya four-step problem-solving backbone** with visible checkpoints throughout the notebook;
 - **three main learning objectives** with smaller sub-points;
-- **assigned reading** tied to the notebook topic;
+- **assigned reading** tied to the notebook topic, including selected _The Ethical Algorithm_ excerpts where directly relevant;
 - **theory** connected to the code;
 - a required **Level 1** foundation;
 - an optional **Level 2** deeper extension;
