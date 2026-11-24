@@ -106,11 +106,15 @@ By the end of the series, students should be able to:
 - Read a codebook and explore what the data mean.
 - Identify data leakage, missing values, and unsuitable predictors.
 
-### 3. Learn the main ideas of statistical learning
+### 3. Explain and apply the foundations of statistical learning
 
-- Explain the purposes of regression, classification, and model selection.
-- Explain what a method is trying to learn.
-- Connect the code to the main idea behind the method.
+- Distinguish supervised from unsupervised learning, regression from classification, and prediction from statistical inference.
+- Explain how model complexity and regularization influence the bias–variance tradeoff, underfitting, overfitting, and generalization.
+- Use training, validation, and test sets for their distinct purposes, and recognize data leakage.
+- Apply cross-validation to compare models and tune hyperparameters while keeping the final test set separate.
+- Explain the curse of dimensionality and its implications for distance-based methods, feature selection, and dimension reduction.
+- Choose evaluation metrics that reflect the task and the consequences of different errors.
+- Interpret effect estimates, confidence intervals, and hypothesis tests, including the effects of multiple testing.
 
 ### 4. Compare different machine learning methods
 
