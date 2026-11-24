@@ -22,7 +22,7 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 |---|---|---|
 | **0** | Human–AI problem solving | Human-centered problem scoping, stakeholder knowledge, alternatives to AI, and learning from unintended consequences after deployment. |
 | **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
-| **1** | Data understanding and exploration | Trustworthy civic/public-interest data: context, representation, missingness, privacy, data literacy, and community knowledge before modeling. |
+| **1** | Data wrangling and exploratory data analysis | Trustworthy civic/public-interest data: context, representation, missingness, privacy, data literacy, and community knowledge before modeling. |
 | **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
 | **3** | Model selection and regularization | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, group errors, feedback, and monitoring. |
 | **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
@@ -149,8 +149,8 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
   **Level 2:** Security, Skills, Model Context Protocol (MCP), and Context Management  
   Use ChatGPT for planning and Codex for a coding workflow with defined permissions, tests, and human review.
 
-- **[Tutorial 1 — Data Understanding and Exploration](Tutorials/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration.ipynb)**  
-  **Level 1:** Data Understanding, Feature Engineering, and Exploration  
+- **[Tutorial 1 — Data Wrangling and Exploratory Data Analysis](Tutorials/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration.ipynb)**  
+  **Level 1:** Data Wrangling and Exploratory Data Analysis  
   **Level 2:** Codebook and Data-Quality Audits  
   Explore the research question, codebook, observations, missingness, and patterns before preparing analysis variables and documenting their limitations.
 
