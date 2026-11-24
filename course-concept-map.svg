@@ -108,7 +108,7 @@
   <rect x="120" y="500" width="380" height="142" rx="18" fill="#f4f0fa" stroke="#72549a" stroke-width="1.8"/>
   <text x="310" y="530" text-anchor="middle" class="topic">Flexible and Nonlinear Methods</text>
   <text x="146" y="562" class="tutorial">
-    <tspan x="146" dy="0">Nonparametric Methods — No Tutorial</tspan>
+    <tspan x="146" dy="0">Nonparametric methods: KNN and trees</tspan>
     <tspan x="146" dy="25">Tutorial 8 — Decision Trees and Boosting</tspan>
     <tspan x="146" dy="25">Tutorial 9 — Support Vector Machines</tspan>
   </text>
@@ -129,7 +129,7 @@
 
   <!-- Legend -->
   <line x1="770" y1="660" x2="812" y2="660" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="820" y="664" class="muted">needed first</text>
+  <text x="820" y="664" class="muted">learning sequence</text>
   <line x1="610" y1="660" x2="652" y2="660" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
   <text x="660" y="664" class="muted">supports or connects</text>
 </svg>

@@ -1,12 +1,14 @@
 # IE 1171: AI for Social Good — Tutorial Series
 
-## Learn statistical methods, work carefully with AI, and connect technical choices to social impact
+## Statistical learning, human–AI collaboration, and social impact
 
-> **Repository status:** Tutorials 0–13 and Tutorial 0 Part 2 are included in this version.
+The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Part 2.
 
-These Jupyter notebook tutorials are built around **two goals that run together**: learn statistics, machine learning, and modern AI, and learn how those tools should be used when data and models can affect people. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
+**Start here:** [Tutorial 0](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude.ipynb) · [Tutorial guide](#tutorial-guide) · [Running the tutorials](#running-the-tutorials) · [Working with AI](#how-to-work-with-ai-in-the-tutorials)
 
-AI is used as a thinking and coding partner, not as a replacement for the student. Tutorial 0 uses Claude for human–AI problem solving. Tutorial 0 Part 2 uses ChatGPT and Codex for an agentic GitHub workflow. The student still has to define the problem, control permissions, understand the domain, verify the code and evidence, explain the result, and take responsibility for the final decision.
+These tutorials connect **statistical learning and modern AI** with the decisions and consequences that arise when data and models affect people. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
+
+AI serves as a partner in reasoning and coding. Tutorial 0 introduces human–AI problem solving with Claude, and Tutorial 0 Part 2 develops an agentic GitHub workflow with ChatGPT and Codex. Students define the problem, set permissions, apply domain knowledge, verify the code and evidence, explain results, and remain responsible for the final decision.
 
 > **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
 
@@ -14,7 +16,7 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 
 ---
 
-## Social-good lens by tutorial
+## Social-good applications by tutorial
 
 | Tutorial | Technical focus | Social-good connection |
 |---|---|---|
@@ -22,17 +24,17 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 | **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
 | **1** | Data understanding and exploration | Trustworthy civic/public-interest data: context, representation, missingness, privacy, data literacy, and community knowledge before modeling. |
 | **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
-| **3** | Model selection and regularization | Feature choice changes the intervention; connect simplification to privacy, proxies, group error, feedback, and real-world monitoring. |
+| **3** | Model selection and regularization | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, group errors, feedback, and monitoring. |
 | **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
 | **5** | A/B and multiple testing | Experiments that affect real people: ethical randomization, meaningful outcomes, unintended consequences, replication, and careful rollout. |
 | **6** | Naive Bayes | Proactive decision support in health, public safety, energy, and other uncertain settings without turning probabilities into automatic decisions. |
-| **7** | KNN and recommender systems | Recommendation shapes exposure, popularity, choice, and future data; examine feedback loops, subgroup performance, and privacy. |
-| **8** | Decision trees and boosting | Accuracy versus consequence and group fairness: forbidden/proxy inputs, worst-group error, competing fairness goals, and expert oversight. |
-| **9** | Support vector machines | Digital-platform prediction can shape attention and opportunity; evaluate targeting objectives, proxies, minority performance, and opacity. |
-| **10** | PCA and PCR | Statistical compression can erase low-variance but socially important signals; test representation with stakeholders and in deployment. |
-| **11** | Clustering | Segmentation can support service planning but can also become unequal treatment; clusters are analytical choices, not natural identities. |
-| **12** | Deep learning | Flexible models require stronger validation, privacy, subgroup checks, human-centered explanations, appeal, and post-deployment monitoring. |
-| **13** | Transformer fine-tuning | Privacy-preserving redaction versus surveillance: data minimization, recall, external stress testing, and purpose-limited deployment. |
+| **7** | KNN and recommender systems | Recommendation shapes exposure, popularity, choice, and future data. Examine feedback loops, subgroup performance, and privacy. |
+| **8** | Decision trees and boosting | Evaluate accuracy alongside error consequences, restricted inputs, proxy variables, worst-group error, competing fairness goals, and expert oversight. |
+| **9** | Support vector machines | Digital-platform prediction can shape attention and opportunity. Evaluate targeting objectives, proxy variables, errors across classes and demographic groups, and limits to interpretation. |
+| **10** | PCA and PCR | Statistical compression can discard low-variance but socially important signals. Evaluate the representation with stakeholders and monitor its effects in use. |
+| **11** | Clustering | Examine how segmentation affects service planning and treatment across groups. Clusters depend on analytical choices and should not be treated as fixed identities. |
+| **12** | Deep learning | Flexible models require careful validation, privacy protection, subgroup checks, explanations, opportunities to challenge decisions, and monitoring after deployment. |
+| **13** | Transformer fine-tuning | License-plate redaction and its privacy limits: missed detections, remaining disclosure risks, data minimization, external testing, and possible surveillance uses. |
 
 ### Frameworks for Human–AI Problem Solving
 
@@ -49,42 +51,32 @@ The [**INFORMS Analytics Framework (IAF)**](https://www.informs.org/Professional
 
 **We use Pólya’s cycle within any IAF domain.** The [Human–AI Problem Solving question sheet (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Human-AI%20Problem%20Solving.pdf) and [IAF Guiding Questions (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Guiding_Questions.pdf) help students structure a conversation with AI: clarify the problem, examine assumptions, compare alternatives, and identify a next step they can verify. Connect selected questions to the project’s evidence and constraints, then check the proposed answers.
 
-The question sheets and **Human Checks** provide starting points. Students must also bring domain knowledge, consult people affected by the proposed solution, and add questions specific to their setting. The team remains responsible for checking AI suggestions and deciding how to act.
+The question sheets and **Human Checks** provide starting points. In their projects, students should draw on domain knowledge, consult people affected by the proposed solution, and add questions specific to their setting, while remaining responsible for checking AI suggestions and deciding how to act.
 
 ---
 
 ## What each tutorial includes
 
-Every tutorial follows the same general design:
+The notebooks combine:
 
-- a common **Pólya four-step problem-solving cycle** with visible checkpoints throughout the notebook;
-- connections to **IAF guiding questions** selected for the tutorial’s analytical and social-good decisions;
-- **three main learning objectives** with smaller sub-points;
-- **assigned reading** tied to the notebook topic, including selected _The Ethical Algorithm_ excerpts where directly relevant;
-- **theory** connected to the code;
-- a required **Level 1** foundation;
-- an optional **Level 2** deeper extension;
-- **Manual Pauses** before using AI;
-- focused AI tasks instead of one giant prompt;
-- **Your Workspace** cells for student work;
-- **Reference Solutions** for comparison;
-- **Human Check** and **Look Back** sections;
-- an **AI for social good** application that is tied to the method, the data, the Human Checks, and the final interpretation.
+- **Learning objectives and assigned reading** that introduce the method and its social-good context.
+- **Theory** connected to the code.
+- **Pólya checkpoints and selected IAF guiding questions** to structure reasoning and analytical decisions.
+- **Manual Pauses** for independent thinking before asking AI.
+- **Focused AI tasks** with specific, verifiable outputs.
+- **Your Workspace** cells for student work and **Reference Solutions** for comparison after an attempt.
+- **Human Checks and Look Back sections** to verify results, interpret limitations, and identify what to revise.
+- **Social-good applications** tied to the method, data, and consequences of the analysis.
 
 ### Level 1 and Level 2
 
-This is a core feature of the tutorial series.
-
-- **Level 1** is the main lesson and the required foundation.
-- **Level 2** is the deeper extension. It builds on Level 1 and pushes the topic further.
-
-The Tutorial Guide below explains the Level 1 and Level 2 topics for each notebook. The concept chart focuses only on how the major ideas connect.
+**Level 1 is the required core. Level 2 provides optional extensions** that build on that foundation. The [tutorial guide](#tutorial-guide) identifies the work at each level.
 
 ---
 
 ## Course concept chart
 
-This chart is the **technical learning map**. It follows the organization and main distinctions used in *An Introduction to Statistical Learning with Applications in Python* and shows the major method families and prerequisite connections. The social-good thread is shown separately above because it runs across every branch rather than belonging to one machine-learning topic. Level 1 and Level 2 are intentionally left out here so the chart stays clean and readable.
+The chart shows how the course topics connect, from problem framing and data exploration to regression, classification, unsupervised learning, and neural networks. It suggests a learning sequence and highlights relationships across topics.
 
 <p align="center">
   <img src="./course-concept-map.svg" alt="IE 1171 course concept map" width="1000">
@@ -92,12 +84,9 @@ This chart is the **technical learning map**. It follows the organization and ma
 
 ### How to read the chart
 
-- Begin with the **Foundations** box at the top.
-- Each large box is a **main book topic area**, and the tutorials inside it belong to that area.
-- The smaller shapes inside each box are the key ideas that connect to the tutorials in that area.
-- Regression and classification feed into later flexible methods, and deep learning comes after that.
-- The compact **Nonparametric Methods — No Tutorial** box is included to keep the chart aligned with the broader book topics.
-- Level 1 and Level 2 details are kept in the **Tutorial Guide** below, where they are easier to read.
+- Begin with **Foundations**. The larger boxes group related topics, and the labels identify their tutorials.
+- Solid arrows suggest a learning sequence. Dashed arrows show supporting connections.
+- Method families overlap. For example, KNN and decision trees are nonparametric methods covered in Tutorials 7 and 8.
 
 ---
 
@@ -105,30 +94,35 @@ This chart is the **technical learning map**. It follows the organization and ma
 
 By the end of the series, students should be able to:
 
-### 1. Solve problems with AI without giving up human control
+### 1. Solve problems with AI while maintaining human judgment
+
 - Use Pólya’s four-step cycle to understand, plan, carry out, and look back.
 - Break a broad task into smaller, checkable steps.
 - Use AI for support while keeping permissions, verification, and final responsibility with the human.
 
 ### 2. Understand data before modeling
+
 - Identify the response, predictors, rows, and units.
 - Read a codebook and explore what the data mean.
-- Catch problems like leakage, missingness, and weak features.
+- Identify data leakage, missing values, and unsuitable predictors.
 
 ### 3. Learn the main ideas of statistical learning
-- Understand regression, classification, and model selection.
+
+- Explain the purposes of regression, classification, and model selection.
 - Explain what a method is trying to learn.
 - Connect the code to the main idea behind the method.
 
 ### 4. Compare different machine learning methods
-- See how methods like Naive Bayes, KNN, trees, XGBoost, and SVMs differ.
-- Learn when different methods may work better.
-- Think about tradeoffs like accuracy, simplicity, and interpretability.
 
-### 5. Place modern AI in the bigger picture
-- Understand where clustering, deep learning, and transformers fit.
-- See how a task-specific transformer differs from a tool like Claude.
-- Understand the difference between using a model and training one.
+- Compare Naive Bayes, KNN, trees, boosting, and support vector machines (SVMs).
+- Select methods suited to the available data and intended use.
+- Evaluate tradeoffs among predictive performance, simplicity, and interpretability.
+
+### 5. Connect deep learning and transformers to earlier methods
+
+- Explain how neural networks learn representations and how transformers use attention.
+- Distinguish a model trained for a specific task from a general-purpose AI assistant.
+- Distinguish using a pretrained model from fine-tuning its parameters.
 
 ### 6. Connect technical work to social good
 
@@ -141,98 +135,92 @@ By the end of the series, students should be able to:
 
 ## Tutorial guide
 
-Below is a short guide to the topics in the series.
+Each title links to its notebook. Complete Level 1 before attempting the optional Level 2 work.
 
 ### Foundations
 
-- **Tutorial 0 — Human-AI Problem Solving with Claude**  
-  **Level 1:** Human-AI Problem Solving  
-  **Level 2:** Deeper Problem Solving  
+- **[Tutorial 0 — Human–AI Problem Solving with Claude](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude.ipynb)**  
+  **Level 1:** Human–AI Problem Solving  
+  **Level 2:** Heuristics, Generalization, and Problem Decomposition  
   Use Pólya’s cycle and the IAF guiding questions to frame a problem, work with AI as a reasoning partner, and check proposed answers against evidence.
 
-- **Tutorial 0 Part 2 — Agentic Workflows with ChatGPT and GitHub**  
-  **Level 1:** Agentic Workflows  
-  **Level 2:** GitHub Practice  
-  Use ChatGPT for planning and Codex for a bounded coding-agent loop involving repository inspection, file changes, tests, diffs, and human approval. Codex is currently available with ChatGPT Free, although free limits and availability may change.
+- **[Tutorial 0 Part 2 — Agentic Workflows with ChatGPT and GitHub](Tutorials/Tutorial%200%20Part%202%20-%20ChatGPT%20and%20GitHub/Tutorial%200%20Part%202%20-%20ChatGPT%20and%20GitHub.ipynb)**  
+  **Level 1:** Agentic GitHub Workflow  
+  **Level 2:** Security, Skills, Model Context Protocol (MCP), and Context Management  
+  Use ChatGPT for planning and Codex for a coding workflow with defined permissions, tests, and human review.
 
-- **Tutorial 1 — Data Understanding and Exploration**  
-  **Level 1:** Exploratory Data Analysis  
-  **Level 2:** Data Wrangling  
-  Explore the research question, codebook, observations, variables, missingness, and patterns before preparing trustworthy data for later modeling.
+- **[Tutorial 1 — Data Understanding and Exploration](Tutorials/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration/Tutorial%201%20-%20Data%20Understanding%20and%20Exploration.ipynb)**  
+  **Level 1:** Data Understanding, Feature Engineering, and Exploration  
+  **Level 2:** Codebook and Data-Quality Audits  
+  Explore the research question, codebook, observations, missingness, and patterns before preparing analysis variables and documenting their limitations.
 
 ### Statistical learning
 
-- **Tutorial 2 — Linear Regression Concepts and Modeling**  
-  **Level 1:** Linear Regression  
-  **Level 2:** Multiple Regression  
-  Learn simple and multiple linear regression, interpret coefficients, and connect the model back to the problem.
+- **[Tutorial 2 — Linear Regression Concepts and Modeling](Tutorials/Tutorial%202%20-%20Linear%20Regression%20Concepts%20and%20Modeling/Tutorial%202%20-%20Linear%20Regression%20Concepts%20and%20Modeling.ipynb)**  
+  **Level 1:** Simple and Multiple Linear Regression  
+  **Level 2:** Cross-Validation and Model Critique  
+  Fit and interpret regression models, assess predictions, and connect the results to the research question.
 
-- **Tutorial 3 — Forward and Backward Model Selection**  
-  **Level 1:** Model Selection  
-  **Level 2:** Regularization  
-  Compare model-building strategies and learn why validation and test data need to be protected.
+- **[Tutorial 3 — Forward and Backward Model Selection](Tutorials/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection.ipynb)**  
+  **Level 1:** Forward and Backward Selection  
+  **Level 2:** Selection Stability and Regularization  
+  Compare predictor-selection procedures and examine why test data must remain outside model selection.
 
-- **Tutorial 4 — Logistic Regression**  
-  **Level 1:** Logistic Regression  
-  **Level 2:** Classification Decisions  
-  Move from linear scores to probabilities, odds, thresholds, and group prediction.
+- **[Tutorial 4 — Logistic Regression](Tutorials/Tutorial%204%20-%20Logistic%20Regression/Tutorial%204%20-%20Logistic%20Regression.ipynb)**  
+  **Level 1:** Binary Logistic Regression and Thresholds  
+  **Level 2:** Multiclass Logistic Regression  
+  Connect linear scores to probabilities and odds, then evaluate classification decisions and their errors.
 
-- **Tutorial 5 — A-B Testing**  
+- **[Tutorial 5 — A/B Testing](Tutorials/Tutorial%205%20-%20A-B%20Testing/Tutorial%205%20-%20A-B%20Testing.ipynb)**  
   **Level 1:** A/B Testing  
-  **Level 2:** Multiple Testing  
-  Learn how to compare groups, interpret uncertainty, and think about p-hacking and repeated testing.
+  **Level 2:** Multiple Testing, Optional Stopping, and Preregistration  
+  Plan a randomized comparison, estimate effects and uncertainty, and examine how repeated analysis affects statistical conclusions.
 
 ### Classification and machine learning
 
-- **Tutorial 6 — Naive Bayes**  
-  **Level 1:** Naive Bayes  
-  **Level 2:** Deeper Probabilistic Classification  
-  Use Bayes’ rule for classification and think about priors, evidence, and strong independence assumptions.
+- **[Tutorial 6 — Naive Bayes](Tutorials/Tutorial%206%20-%20Naive%20Bayes/Tutorial%206%20-%20Naive%20Bayes.ipynb)**  
+  **Level 1:** Gaussian Naive Bayes  
+  **Level 2:** Representations, Independence Assumptions, and Smoothing  
+  Apply Bayes’ rule to classification and examine the assumption that predictors are conditionally independent given the class.
 
-- **Tutorial 7 — K-Nearest Neighbors and Recommender Systems**  
-  **Level 1:** K-Nearest Neighbors  
-  **Level 2:** Recommender Systems  
-  Learn distance-based prediction and then apply the same idea to build and evaluate a recommender system.
+- **[Tutorial 7 — K-Nearest Neighbors and Recommender Systems](Tutorials/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation.ipynb)**  
+  **Level 1:** KNN Movie Recommendations  
+  **Level 2:** Rating Filters, Distance Choice, and Stability  
+  Build and evaluate a movie recommender, then examine how representation and distance choices affect its recommendations.
 
-- **Tutorial 8 — Decision Trees and Boosting**  
-  **Level 1:** Decision Trees  
-  **Level 2:** XGBoost  
-  Start with an interpretable tree, then move to a stronger boosted model.
+- **[Tutorial 8 — Decision Trees and Boosting](Tutorials/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting.ipynb)**  
+  **Level 1:** Classification Trees, Pruning, and Gradient Boosting  
+  **Level 2:** XGBoost and Hyperparameter Tuning  
+  Compare a decision tree with boosted ensembles and evaluate predictive performance alongside interpretability and error consequences.
 
-- **Tutorial 9 — Support Vector Machines**  
-  **Level 1:** Support Vector Machines  
-  **Level 2:** Kernel Methods  
-  Learn margins, support vectors, and how kernels let a linear idea act in a more flexible way.
+- **[Tutorial 9 — Support Vector Machines](Tutorials/Tutorial%209%20-%20Support%20Vector%20Machines/Tutorial%209%20-%20Support%20Vector%20Machines.ipynb)**  
+  **Level 1:** Linear SVMs and Kernel Methods  
+  **Level 2:** Hyperparameter Tuning and Group Error Audits  
+  Learn margins and support vectors, use kernels for nonlinear decision boundaries, and examine classification errors.
 
 ### Unsupervised learning
 
-- **Tutorial 10 — Principal Component Analysis**  
+- **[Tutorial 10 — Principal Component Analysis](Tutorials/Tutorial%2010%20-%20Principal%20Component%20Analysis/Tutorial%2010%20-%20Principal%20Component%20Analysis.ipynb)**  
   **Level 1:** Principal Component Analysis  
-  **Level 2:** Principal Components Regression  
-  Reduce dimension, understand variation, and connect PCA to later modeling ideas.
+  **Level 2:** Principal Components Regression and Privacy Checks  
+  Reduce dimension, interpret retained variation, and use component scores in regression.
 
-- **Tutorial 11 — Unsupervised Learning and Clustering**  
-  **Level 1:** Clustering  
-  **Level 2:** Hierarchical Clustering  
-  Learn how to group similar observations when there is no response variable.
+- **[Tutorial 11 — Unsupervised Learning and Clustering](Tutorials/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering.ipynb)**  
+  **Level 1:** K-Means Clustering, Profiling, and Stability  
+  **Level 2:** Hierarchical Clustering and Linkage Sensitivity  
+  Compare ways to group observations without response labels and examine how preprocessing and modeling choices change the groups.
 
 ### Deep learning and transformers
 
-- **Tutorial 12 — Deep Learning**  
-  **Level 1:** Deep Learning  
-  **Level 2:** Transformers and LLM Ideas  
-  Learn the basics of neural networks, then connect them to transformers and modern AI ideas.
+- **[Tutorial 12 — Deep Learning](Tutorials/Tutorial%2012%20-%20Deep%20Learning/Tutorial%2012%20-%20Deep%20Learning.ipynb)**  
+  **Level 1:** Neural Networks and Validation  
+  **Level 2:** Architecture, Learned Representations, and Attention  
+  Build and evaluate a neural network, inspect learned representations, and connect attention to transformer models.
 
-- **Tutorial 13 — Transformer Fine-Tuning**  
-  **Level 1:** Transformer Fine-Tuning  
-  **Level 2:** Object Detection Example  
-  This tutorial focuses on training and fine-tuning a transformer-based vision model for a specific task. It is different from Claude because Claude is a general AI assistant, while this tutorial is about adapting a smaller model to do one job well.
-
-  **Important note:** For the training part of this tutorial, a **GPU is needed**. A CPU may run very slowly or may not be practical for the full training steps used here. In Google Colab, use a GPU runtime.
-
-### Nonparametric Methods — No Tutorial
-
-This topic is included in the chart for completeness, but the current tutorial series does not have a separate notebook for it.
+- **[Tutorial 13 — Transformer Fine-Tuning](Tutorials/Tutorial%2013%20-%20Transformer%20Fine-Tuning/Tutorial%2013%20-%20Transformer%20Fine-Tuning.ipynb)**  
+  **Level 1:** License-Plate Detection and Image Redaction  
+  **Level 2:** Full-Data Training, External Evaluation, and Video Redaction  
+  Fine-tune a pretrained vision transformer, evaluate detections, and examine the privacy limits of automated redaction. Training requires a CUDA-capable GPU.
 
 ---
 
@@ -240,51 +228,51 @@ This topic is included in the chart for completeness, but the current tutorial s
 
 ### Before starting
 
-1. Read the learning objectives.
-2. Do the assigned reading.
-3. Download the notebook and its data files.
-4. Keep the file names and folder names unchanged.
-5. Work through the notebook in order.
-6. Complete the Manual Pauses and Human Checks yourself.
+GitHub displays the notebooks for reading. To execute code, open them in Google Colab or a local Jupyter environment.
+
+1. Read the notebook’s learning objectives, assigned reading, and setup instructions.
+2. Keep the notebook, data files, and `tutorial-icons` folder together. Preserve subfolders such as Tutorial 7’s `data/` directory.
+3. Work through the cells in order, stopping for **Manual Pauses**, workspace tasks, and **Human Checks**.
+4. Save your completed notebook and any output files needed later.
+
+**Tutorials 2 and 3 use `tutorial_1_output.csv`, prepared in Tutorial 1.** Copies are included in their folders. Complete Tutorial 1 to understand how the variables were constructed.
 
 ### Option 1: Google Colab
 
-Google Colab is the easiest option if you do not have Python set up locally.
+[Google Colab](https://colab.research.google.com/) runs notebooks without a local Python installation.
 
-1. Download the notebook and any needed data files.
-2. Go to [Google Colab](https://colab.research.google.com/).
-3. Upload the notebook.
-4. Upload the needed data files into the session.
-5. Run the notebook from top to bottom.
+1. Open or upload the chosen notebook in Colab and save a working copy.
+2. Make the required data files available in the runtime, following the notebook’s setup instructions. Opening a notebook from GitHub does not copy its neighboring data files into the runtime.
+3. Install the packages specified in the notebook and check that its data-loading step succeeds.
+4. Complete the activities in order. Save or download important outputs before ending the session, because runtime files are temporary.
+
+Colab GPU access and session limits can vary. See the [Colab FAQ](https://research.google.com/colaboratory/faq.html) for current availability and saving guidance.
 
 ### Option 2: Jupyter Notebook locally
 
-If you already work locally, open the notebook in Jupyter and keep the needed data files in the same folder structure expected by the notebook.
+Download or clone the repository to preserve the notebook, data, and image folders. Open the chosen notebook from its tutorial folder in Jupyter, use the environment specified by its setup instructions, and confirm that relative file paths resolve before proceeding.
 
-Tutorial 0 Part 2 needs Git and uses ChatGPT Free with Codex. The notebook also includes a manual ChatGPT Free fallback if Codex is unavailable or its free limit is reached. Tutorial 13 needs internet for the first model and dataset download, plus a GPU for training.
+### Additional requirements
+
+- **Tutorial 0 Part 2:** The agent workflow uses Git, Python, and Codex in a terminal. Follow the notebook’s installation instructions and consult [OpenAI’s current Codex access guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for plan availability and limits. The notebook provides a manual ChatGPT workflow if Codex is unavailable.
+- **Tutorial 13:** Training requires a CUDA-capable GPU and internet access to download the model and dataset. A CPU can support data inspection and small checks. In Colab, select a GPU runtime before the setup cell and verify that CUDA is available.
 
 ---
 
 ## How to work with AI in the tutorials
 
-The AI tasks are split into smaller steps on purpose.
+Use each AI task to advance one part of the problem, then check the result before continuing.
 
 1. Complete the **Manual Pause** first.
 2. Copy the prompt from the notebook.
-3. Give AI only the needed context.
+3. Provide the relevant question, your own reasoning, and the evidence or constraints needed for the task.
 4. Read the explanation and code carefully.
 5. Paste the code into **Your Workspace**.
 6. Run it and inspect the output.
 7. Compare with the **Reference Solution** after trying it yourself.
 8. Finish the **Human Check** and **Look Back** sections.
 
-Do not trust an answer only because it sounds confident or the code runs. Always check whether:
-
-- the problem was understood correctly;
-- the right file and variables were used;
-- the result actually supports the claim;
-- the method was used in a reasonable way;
-- the limits and possible consequences were considered.
+Before accepting an answer, check that it addresses the intended problem, uses the correct data and variables, and supports its claims with evidence. Explain why the method is appropriate and what its assumptions, limitations, and possible consequences mean in the application.
 
 ---
 
@@ -292,4 +280,4 @@ Do not trust an answer only because it sounds confident or the code runs. Always
 
 These notebooks are for learning, but the social-good questions are treated as part of the technical work. A model working well in a notebook does not automatically mean it should be used in a real decision that affects people.
 
-Human judgment, domain knowledge, checking, privacy protection, uncertainty, and attention to who may be helped or harmed matter throughout the whole series. When students cannot answer a Human Check from their own expertise, the correct next step is not to guess—it is to identify what expertise or evidence is missing.
+In project work, decisions about using a model should be supported by domain knowledge, evidence about benefits and harms, privacy protection, and a plan for monitoring its effects. When a Human Check raises a question beyond your expertise, identify the missing evidence or expertise and seek it before proceeding.
