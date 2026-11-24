@@ -39,10 +39,11 @@
     <tspan x="243" dy="18">and GitHub</tspan>
   </text>
   <rect x="316" y="72" width="136" height="96" rx="13" fill="#ffffff" stroke="#6b7280" stroke-width="1.4"/>
-  <text x="384" y="94" text-anchor="middle" class="tutorial">
+  <text x="384" y="92" text-anchor="middle" class="tutorial">
     <tspan x="384" dy="0">Tutorial 1</tspan>
-    <tspan x="384" dy="20">Exploratory Data</tspan>
-    <tspan x="384" dy="18">Analysis</tspan>
+    <tspan x="384" dy="20">Data Wrangling</tspan>
+    <tspan x="384" dy="18">and Exploratory</tspan>
+    <tspan x="384" dy="18">Data Analysis</tspan>
   </text>
   <path d="M170 120 L179 120" class="edge-small"/>
   <path d="M305 120 L314 120" class="edge-small"/>
