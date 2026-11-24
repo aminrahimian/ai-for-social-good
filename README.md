@@ -100,11 +100,14 @@ By the end of the series, students should be able to:
 - Break a broad task into smaller, checkable steps.
 - Use AI for support while keeping permissions, verification, and final responsibility with the human.
 
-### 2. Understand data before modeling
+### 2. Prepare data and conduct exploratory data analysis
 
-- Identify the response, predictors, rows, and units.
-- Read a codebook and explore what the data mean.
-- Identify data leakage, missing values, and unsuitable predictors.
+- Use codebooks to identify the unit of observation, variable types, measurement scales, and coding conventions.
+- Clean, recode, and transform data while documenting missing values and feature-engineering choices.
+- Use summary statistics, histograms, boxplots, scatterplots, and correlation heatmaps to examine distributions, outliers, missingness, and relationships.
+- Use PCA to reduce dimension and visualize multivariate data, interpreting component loadings, explained variance, and information loss.
+- Use clustering to explore groups and assess how scaling, representation, and algorithm choices affect the results.
+- Interpret exploratory patterns using domain knowledge and distinguish association from causation.
 
 ### 3. Explain and apply the foundations of statistical learning
 
