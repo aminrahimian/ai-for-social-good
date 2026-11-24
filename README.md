@@ -34,11 +34,24 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 | **12** | Deep learning | Flexible models require stronger validation, privacy, subgroup checks, human-centered explanations, appeal, and post-deployment monitoring. |
 | **13** | Transformer fine-tuning | Privacy-preserving redaction versus surveillance: data minimization, recall, external stress testing, and purpose-limited deployment. |
 
-### Pólya is the problem-solving backbone
+### Human–AI problem solving with Pólya and the IAF
 
-Every notebook uses George Pólya’s four-step cycle—**Understand the Problem → Devise a Plan → Carry Out the Plan → Look Back**—as the common problem-solving structure. The four colored Pólya checkpoints are intentionally more prominent than the normal tutorial symbols. Students can return to an earlier step whenever the data, code, or domain evidence shows that the original framing was incomplete.
+Two complementary frameworks connect the work in each notebook to the decisions in an analytics project.
 
-Human Checks are also intentionally **not complete checklists**. The notebooks can provide useful generic questions, but a serious check depends on domain expertise. Students are expected to add their own domain question or involve someone with the relevant expertise when the consequences of an error matter.
+**Pólya’s four-step cycle — Understand the Problem → Devise a Plan → Carry Out the Plan → Look Back — structures our work with AI.** The four colored gears mark these stages throughout the notebooks. Students return to earlier questions whenever new evidence changes their understanding or suggests a different plan.
+
+The [**INFORMS Analytics Framework (IAF)**](https://www.informs.org/Professional-Development/INFORMS-Analytics-Framework) connects that reasoning to the wider project. Its seven domains cover the human or organizational problem, the analytical question, data, method selection, model development, deployment, and the continuing management of a solution. In our social-good projects, its term *business problem* refers to the community or organizational need and the decision we hope to improve.
+
+<p align="center">
+  <a href="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/tutorial-icons/polya_gears.png"><img src="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/tutorial-icons/polya_gears.png" alt="Pólya’s four interlocking gears: Understand the Problem, Devise a Plan, Carry Out the Plan, and Look Back." width="380" height="379"></a>
+  <a href="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Seven_Domains.png"><img src="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Seven_Domains.png" alt="The INFORMS Analytics Framework circle with seven connected domains: business problem framing, analytics problem framing, data, methodology selection, model development, deployment, and life cycle management." width="380" height="380"></a>
+</p>
+
+*Figures: Pólya’s cycle from [Amin Rahimian’s teaching page](https://aminrahimian.github.io/Teaching.html), and the seven-domain circle from [INFORMS](https://ez.informs.org/var/ezflow_site/storage/images/media/iol/images/iaf_loop_web_graphic-2-1/4844799-1-eng-US/IAF_Loop_Web_Graphic-2-1_large.png). Select either figure to view it at full size.*
+
+**We use Pólya’s cycle within any IAF domain.** The [Human–AI Problem Solving question sheet (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Human-AI%20Problem%20Solving.pdf) and [IAF Guiding Questions (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Guiding_Questions.pdf) help students structure a conversation with AI: clarify the problem, examine assumptions, compare alternatives, and identify a next step they can verify. Connect selected questions to the project’s evidence and constraints, then check the proposed answers.
+
+The question sheets and **Human Checks** provide starting points. Students must also bring domain knowledge, consult people affected by the proposed solution, and add questions specific to their setting. The team remains responsible for checking AI suggestions and deciding how to act.
 
 ---
 
@@ -46,7 +59,8 @@ Human Checks are also intentionally **not complete checklists**. The notebooks c
 
 Every tutorial follows the same general design:
 
-- a common **Pólya four-step problem-solving backbone** with visible checkpoints throughout the notebook;
+- a common **Pólya four-step problem-solving cycle** with visible checkpoints throughout the notebook;
+- connections to **IAF guiding questions** selected for the tutorial’s analytical and social-good decisions;
 - **three main learning objectives** with smaller sub-points;
 - **assigned reading** tied to the notebook topic, including selected _The Ethical Algorithm_ excerpts where directly relevant;
 - **theory** connected to the code;
@@ -119,6 +133,8 @@ By the end of the series, students should be able to:
 - Understand the difference between using a model and training one.
 
 ### 6. Connect technical work to social good
+
+- Use IAF guiding questions to connect problem framing, analysis, deployment, and monitoring.
 - Identify who may benefit, who may be harmed, and which errors matter in the application domain.
 - Use domain knowledge to check assumptions, measurements, proxies, thresholds, and model limits rather than relying on a generic checklist.
 - Protect privacy, communicate uncertainty, avoid claims the data cannot support, and keep accountable human review for consequential decisions.
@@ -134,7 +150,7 @@ Below is a short guide to the topics in the series.
 - **Tutorial 0 — Human-AI Problem Solving with Claude**  
   **Level 1:** Human-AI Problem Solving  
   **Level 2:** Deeper Problem Solving  
-  Learn how to break a problem into steps, use AI carefully, and check answers instead of trusting them automatically.
+  Use Pólya’s cycle and the IAF guiding questions to frame a problem, work with AI as a reasoning partner, and check proposed answers against evidence.
 
 - **Tutorial 0 Part 2 — Agentic Workflows with ChatGPT and GitHub**  
   **Level 1:** Agentic Workflows  
