@@ -100,10 +100,10 @@
   </text>
 
   <!-- Arrows from statistical foundations -->
-  <path d="M700 166 C620 215 210 210 130 270" class="edge"/>
-  <path d="M742 171 C675 220 450 220 375 270" class="edge"/>
-  <path d="M792 171 C760 220 665 220 620 270" class="edge"/>
-  <path d="M840 168 C850 220 860 230 865 270" class="edge"/>
+  <path d="M700 172 C620 215 210 210 130 270" class="edge"/>
+  <path d="M742 172 C675 220 450 220 375 270" class="edge"/>
+  <path d="M792 172 C760 220 665 220 620 270" class="edge"/>
+  <path d="M840 172 C850 220 860 230 865 270" class="edge"/>
 
   <!-- Flexible methods -->
   <rect x="120" y="500" width="380" height="142" rx="18" fill="#f4f0fa" stroke="#72549a" stroke-width="1.8"/>
