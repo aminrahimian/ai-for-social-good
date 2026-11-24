@@ -102,41 +102,33 @@ By the end of the series, students should be able to:
 
 ### 2. Prepare data and conduct exploratory data analysis
 
-- Use codebooks to identify the unit of observation, variable types, measurement scales, and coding conventions.
-- Clean, recode, and transform data while documenting missing values and feature-engineering choices.
-- Use summary statistics, histograms, boxplots, scatterplots, and correlation heatmaps to examine distributions, outliers, missingness, and relationships.
-- Use PCA to reduce dimension and visualize multivariate data, interpreting component loadings, explained variance, and information loss.
-- Use clustering to explore groups and assess how scaling, representation, and algorithm choices affect the results.
-- Interpret exploratory patterns using domain knowledge and distinguish association from causation.
+- Identify the response, predictors, rows, and units, and use a codebook to understand what the data mean.
+- Clean and prepare data, using summary statistics and visualizations to explore patterns and potential problems.
+- Use PCA and clustering to explore variation and groups, interpreting the results in context.
 
 ### 3. Explain and apply the foundations of statistical learning
 
-- Distinguish supervised from unsupervised learning, regression from classification, and prediction from statistical inference.
-- Explain how model complexity and regularization influence the bias–variance tradeoff, underfitting, overfitting, and generalization.
-- Use training, validation, and test sets for their distinct purposes, and recognize data leakage.
-- Apply cross-validation to compare models and tune hyperparameters while keeping the final test set separate.
-- Explain the curse of dimensionality and its implications for distance-based methods, feature selection, and dimension reduction.
-- Choose evaluation metrics that reflect the task and the consequences of different errors.
-- Interpret effect estimates, confidence intervals, and hypothesis tests, including the effects of multiple testing.
+- Explain how models learn from data, why they can overfit, and how to assess performance on new cases.
+- Use training, validation, and test data appropriately to compare and tune models while avoiding data leakage.
+- Interpret evaluation results and statistical uncertainty in light of the problem and the consequences of errors.
 
-### 4. Compare different machine learning methods
+### 4. Select and apply appropriate machine learning methods
 
-- Compare Naive Bayes, KNN, trees, boosting, and support vector machines (SVMs).
-- Select methods suited to the available data and intended use.
-- Evaluate tradeoffs among predictive performance, simplicity, and interpretability.
-
-### 5. Connect deep learning and transformers to earlier methods
-
+- Compare methods suited to the question and data, balancing predictive performance, simplicity, and interpretability.
 - Explain how neural networks learn representations and how transformers use attention.
-- Distinguish a model trained for a specific task from a general-purpose AI assistant.
-- Distinguish using a pretrained model from fine-tuning its parameters.
+- Distinguish using pretrained models from fine-tuning them, and assess which approach fits the task, available data, and resources.
 
-### 6. Connect technical work to social good
+### 5. Apply AI ethics and responsible governance
 
-- Use IAF guiding questions to connect problem framing, analysis, deployment, and monitoring.
-- Identify who may benefit, who may be harmed, and which errors matter in the application domain.
-- Use domain knowledge to check assumptions, measurements, proxies, thresholds, and model limits rather than relying on a generic checklist.
-- Protect privacy, communicate uncertainty, avoid claims the data cannot support, and keep accountable human review for consequential decisions.
+- Apply ethical principles to assess benefits, harms, privacy, and fairness for the people affected by an AI application.
+- Identify the professional responsibilities and governance needs of a proposed use, including accountability and human oversight.
+- Use the IAF to connect problem framing and evaluation with deployment and ongoing monitoring.
+
+### 6. Apply AI in context and communicate with stakeholders
+
+- In course projects, address an engineering or social-good problem using disciplinary expertise and input from affected people.
+- Communicate findings, recommendations, uncertainty, and limitations to technical and nontechnical audiences.
+- Explain how the evidence supports a proposed action and what further evaluation is needed before use.
 
 ---
 
