@@ -12,7 +12,7 @@ AI serves as a partner in reasoning and coding. Tutorial 0 introduces human–AI
 
 > **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
 
-Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_ provide a recurring foundation for privacy, fairness, bias, and real-world deployment. They are assigned in the tutorials where those concepts directly support the technical method and social-good application.
+Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_ provide a recurring foundation for privacy, fairness, bias, credible evidence, and real-world deployment. The tutorials identify core excerpts alongside optional further reading where those concepts support the technical method and social-good application.
 
 ---
 
@@ -22,19 +22,19 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 |---|---|---|
 | **0** | Human–AI problem solving | Human-centered problem scoping, stakeholder knowledge, alternatives to AI, and learning from unintended consequences after deployment. |
 | **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
-| **1** | Data wrangling and exploratory data analysis | Trustworthy civic/public-interest data: context, representation, missingness, privacy, data literacy, and community knowledge before modeling. |
+| **1** | Data wrangling and exploratory data analysis | Trustworthy civic/public-interest data: context, representation, missingness, limits of anonymization, data literacy, and community knowledge before modeling. |
 | **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
-| **3** | Model selection and regularization | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, group errors, feedback, and monitoring. |
+| **3** | Model selection, with optional regularization | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, group errors, feedback, and monitoring. |
 | **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
-| **5** | A/B and multiple testing | Experiments that affect real people: ethical randomization, meaningful outcomes, unintended consequences, replication, and careful rollout. |
-| **6** | Naive Bayes | Proactive decision support in health, public safety, energy, and other uncertain settings without turning probabilities into automatic decisions. |
+| **5** | A/B testing, with optional advanced multiple-testing procedures | Examine how analytical choices affect the credibility of experimental findings, alongside ethical randomization, meaningful outcomes, unintended consequences, and replication. |
+| **6** | Naive Bayes | Use conditional probability to examine randomized response and sensitive inferences, then consider how predictions can support human decisions under uncertainty. |
 | **7** | KNN and recommender systems | Recommendation shapes exposure, popularity, choice, and future data. Examine feedback loops, subgroup performance, and privacy. |
-| **8** | Decision trees and boosting | Evaluate accuracy alongside error consequences, restricted inputs, proxy variables, worst-group error, competing fairness goals, and expert oversight. |
-| **9** | Support vector machines | Digital-platform prediction can shape attention and opportunity. Evaluate targeting objectives, proxy variables, errors across classes and demographic groups, and limits to interpretation. |
-| **10** | PCA and PCR | Statistical compression can discard low-variance but socially important signals. Evaluate the representation with stakeholders and monitor its effects in use. |
-| **11** | Clustering | Examine how segmentation affects service planning and treatment across groups. Clusters depend on analytical choices and should not be treated as fixed identities. |
-| **12** | Deep learning | Flexible models require careful validation, privacy protection, subgroup checks, explanations, opportunities to challenge decisions, and monitoring after deployment. |
-| **13** | Transformer fine-tuning | License-plate redaction and its privacy limits: missed detections, remaining disclosure risks, data minimization, external testing, and possible surveillance uses. |
+| **8** | Decision trees and boosting | Evaluate accuracy alongside error consequences, restricted inputs, proxy variables, errors across intersecting groups, competing fairness goals, and expert oversight. |
+| **9** | Support vector machines | Connect word-vector representations to classification and examine how features and decision boundaries can shape attention and opportunity in the ad-click example. |
+| **10** | PCA, with optional PCR | Revisit the word-embedding case using PCA. Examine how representation choices affect information and social associations, and why compression alone does not establish privacy or fairness. |
+| **11** | Clustering | Connect the shopping and recommendation readings to customer segmentation. Examine how grouping choices affect treatment and why clusters should not be treated as fixed identities. |
+| **12** | Deep learning | Use smoking-status predictions and group error rates to examine uncertainty, privacy, unwanted interventions, human oversight, and monitoring after deployment. |
+| **13** | Transformer fine-tuning | Examine trust and privacy in license-plate redaction, including missed detections, residual disclosure, and possible surveillance uses. Distinguish redaction from differential privacy. |
 
 ### Frameworks for Human–AI Problem Solving
 
@@ -72,11 +72,13 @@ The notebooks combine:
 
 **Level 1 is the required core. Level 2 provides optional extensions** that build on that foundation. The [tutorial guide](#tutorial-guide) identifies the work at each level.
 
+Consult each notebook’s **Assigned Reading** section for required readings and any optional references or review of earlier material. Students can follow the core sequence without completing earlier optional activities. For example, Tutorial 3 assigns cross-validation even if students skipped Tutorial 2’s optional activity.
+
 ---
 
 ## Course concept chart
 
-The chart shows how the course topics connect, from problem framing and data exploration to regression, classification, unsupervised learning, and neural networks. It suggests a learning sequence and highlights relationships across topics.
+The chart shows how the course topics connect, from problem framing and data exploration to regression, classification, unsupervised learning, and neural networks. It suggests a learning sequence and highlights relationships across topics. It includes both core topics and optional extensions, which are distinguished in the tutorial guide below.
 
 <p align="center">
   <img src="./course-concept-map.svg" alt="IE 1171 course concept map" width="1000">
@@ -163,7 +165,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 - **[Tutorial 3 — Forward and Backward Model Selection](Tutorials/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection.ipynb)**  
   **Level 1:** Forward and Backward Selection  
   **Level 2:** Selection Stability and Regularization  
-  Compare predictor-selection procedures and examine why test data must remain outside model selection.
+  Compare predictor-selection procedures using validation and cross-validation, and keep test data outside model selection.
 
 - **[Tutorial 4 — Logistic Regression](Tutorials/Tutorial%204%20-%20Logistic%20Regression/Tutorial%204%20-%20Logistic%20Regression.ipynb)**  
   **Level 1:** Binary Logistic Regression and Thresholds  
@@ -202,7 +204,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 - **[Tutorial 10 — Principal Component Analysis](Tutorials/Tutorial%2010%20-%20Principal%20Component%20Analysis/Tutorial%2010%20-%20Principal%20Component%20Analysis.ipynb)**  
   **Level 1:** Principal Component Analysis  
   **Level 2:** Principal Components Regression and Privacy Checks  
-  Reduce dimension, interpret retained variation, and use component scores in regression.
+  Reduce dimension and interpret retained variation. The optional extension uses component scores in regression and examines privacy limits.
 
 - **[Tutorial 11 — Unsupervised Learning and Clustering](Tutorials/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering.ipynb)**  
   **Level 1:** K-Means Clustering, Profiling, and Stability  
@@ -214,7 +216,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 - **[Tutorial 12 — Deep Learning](Tutorials/Tutorial%2012%20-%20Deep%20Learning/Tutorial%2012%20-%20Deep%20Learning.ipynb)**  
   **Level 1:** Neural Networks and Validation  
   **Level 2:** Architecture, Learned Representations, and Attention  
-  Build and evaluate a neural network, inspect learned representations, and connect attention to transformer models.
+  Build and evaluate a neural network and interpret its errors. Optional activities examine architecture, learned representations, and attention, with an optional reading on generative adversarial networks.
 
 - **[Tutorial 13 — Transformer Fine-Tuning](Tutorials/Tutorial%2013%20-%20Transformer%20Fine-Tuning/Tutorial%2013%20-%20Transformer%20Fine-Tuning.ipynb)**  
   **Level 1:** License-Plate Detection and Image Redaction  
