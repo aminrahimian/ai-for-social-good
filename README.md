@@ -187,7 +187,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 - **[Tutorial 7 — K-Nearest Neighbors and Recommender Systems](Tutorials/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation.ipynb)**  
   **Level 1:** KNN Movie Recommendations  
   **Level 2:** Rating Filters, Distance Choice, and Stability  
-  Build and evaluate a movie recommender, then examine how representation and distance choices affect its recommendations.
+  Build a movie recommender, inspect its outputs, and examine how representation and distance choices affect its recommendations.
 
 - **[Tutorial 8 — Decision Trees and Boosting](Tutorials/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting.ipynb)**  
   **Level 1:** Classification Trees, Pruning, and Gradient Boosting  
@@ -203,7 +203,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 
 - **[Tutorial 10 — Principal Component Analysis](Tutorials/Tutorial%2010%20-%20Principal%20Component%20Analysis/Tutorial%2010%20-%20Principal%20Component%20Analysis.ipynb)**  
   **Level 1:** Principal Component Analysis  
-  **Level 2:** Principal Components Regression and Privacy Checks  
+  **Level 2:** Principal Components Regression and Privacy Limits  
   Reduce dimension and interpret retained variation. The optional extension uses component scores in regression and examines privacy limits.
 
 - **[Tutorial 11 — Unsupervised Learning and Clustering](Tutorials/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering.ipynb)**  
@@ -220,7 +220,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 
 - **[Tutorial 13 — Transformer Fine-Tuning](Tutorials/Tutorial%2013%20-%20Transformer%20Fine-Tuning/Tutorial%2013%20-%20Transformer%20Fine-Tuning.ipynb)**  
   **Level 1:** License-Plate Detection and Image Redaction  
-  **Level 2:** Full-Data Training, External Evaluation, and Video Redaction  
+  **Level 2:** Full-Data Training, External Evaluation, and Video Redaction Design  
   Fine-tune a pretrained vision transformer, evaluate detections, and examine the privacy limits of automated redaction. Training requires a CUDA-capable GPU.
 
 ---
