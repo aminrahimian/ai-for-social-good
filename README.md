@@ -136,7 +136,7 @@ By the end of the series, students should be able to:
 
 ### 6. Apply AI in context and communicate with stakeholders
 
-- In course projects, address an engineering or social-good problem using disciplinary expertise and input from affected people.
+- In course projects, address an analytics problem in a social-good context, drawing on disciplinary expertise and input from affected people.
 - Communicate findings, recommendations, uncertainty, and limitations to technical and nontechnical audiences.
 - Explain how the evidence supports a proposed action and what further evaluation is needed before use.
 
