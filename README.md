@@ -2,11 +2,17 @@
 
 ## Statistical learning, human–AI collaboration, and social impact
 
+**IE 1171: AI for Social Good** at the University of Pittsburgh offers a hands-on introduction to machine learning and modern AI through project-based work with real-world data, including applications in public health, consumer credit, and online platforms. Technical work is paired with readings on fairness, privacy, accountability, and data ethics.
+
+Formerly [Data for Social Good](https://news.engineering.pitt.edu/using-data-for-social-good/), the course was redesigned around mastery-based learning and AI-assisted tutorials, with a guided technical core and optional extensions.
+
+The course supports the [Engineering Data Analytics Certificate](https://www.engineering.pitt.edu/departments/industrial/undergraduate/degrees/certificates/) and Pitt Business’s [Certificate in Foundations of AI for Business](https://www.cba.pitt.edu/academics/certificates/certificate-in-foundations-of-ai-for-business/).
+
 The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Part 2.
 
 **Start here:** [Tutorial 0](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude.ipynb) · [Tutorial guide](#tutorial-guide) · [Running the tutorials](#running-the-tutorials) · [Working with AI](#how-to-work-with-ai-in-the-tutorials)
 
-These tutorials connect **statistical learning and modern AI** with the decisions and consequences that arise when data and models affect people. Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
+Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
 
 AI serves as a partner in reasoning and coding. Tutorial 0 introduces human–AI problem solving with Claude, and Tutorial 0 Part 2 develops an agentic GitHub workflow with ChatGPT and Codex. Students define the problem, set permissions, apply domain knowledge, verify the code and evidence, explain results, and remain responsible for the final decision.
 
