@@ -18,7 +18,7 @@ The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Pa
 
 Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
 
-> **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
+> **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI supports the work, while students guide the process, apply domain knowledge, and remain responsible for their decisions.
 
 ---
 
