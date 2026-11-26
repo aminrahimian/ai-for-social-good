@@ -1,12 +1,14 @@
-# IE 1171: AI for Social Good — Tutorial Series
+# IE 1171: AI for Social Good
 
-## Statistical learning, human–AI collaboration, and social impact
+*Statistical learning, human–AI collaboration, and social impact*
 
 **IE 1171: AI for Social Good** at the University of Pittsburgh offers a hands-on introduction to machine learning and modern AI through project-based work with real-world data, including applications in public health, consumer credit, and online platforms. Technical work is paired with readings on fairness, privacy, accountability, and data ethics.
 
 Formerly [Data for Social Good](https://news.engineering.pitt.edu/using-data-for-social-good/), the course was redesigned around mastery-based learning and AI-assisted tutorials, with a guided technical core and optional extensions.
 
 The course supports the [Engineering Data Analytics Certificate](https://www.engineering.pitt.edu/departments/industrial/undergraduate/degrees/certificates/) and Pitt Business’s [Certificate in Foundations of AI for Business](https://www.cba.pitt.edu/academics/certificates/certificate-in-foundations-of-ai-for-business/).
+
+## Tutorial series
 
 The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Part 2.
 
