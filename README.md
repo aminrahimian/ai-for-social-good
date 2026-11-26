@@ -24,17 +24,19 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 | **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
 | **1** | Data wrangling and exploratory data analysis | Trustworthy civic/public-interest data: context, representation, missingness, limits of anonymization, data literacy, and community knowledge before modeling. |
 | **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
-| **3** | Model selection, with optional regularization | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, group errors, feedback, and monitoring. |
+| **3** | Model selection and regularization\* | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, differences in prediction error across groups, feedback, and monitoring. |
 | **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
-| **5** | A/B testing, with optional advanced multiple-testing procedures | Examine how analytical choices affect the credibility of experimental findings, alongside ethical randomization, meaningful outcomes, unintended consequences, and replication. |
+| **5** | A/B testing and advanced multiple-testing procedures\* | Examine how analytical choices affect the credibility of experimental findings, alongside ethical randomization, meaningful outcomes, unintended consequences, and replication. |
 | **6** | Naive Bayes | Use conditional probability to examine randomized response and sensitive inferences, then consider how predictions can support human decisions under uncertainty. |
 | **7** | KNN and recommender systems | Recommendation shapes exposure, popularity, choice, and future data. Examine feedback loops, subgroup performance, and privacy. |
 | **8** | Decision trees and boosting | Evaluate accuracy alongside error consequences, restricted inputs, proxy variables, errors across intersecting groups, competing fairness goals, and expert oversight. |
 | **9** | Support vector machines | Connect word-vector representations to classification and examine how features and decision boundaries can shape attention and opportunity in the ad-click example. |
-| **10** | PCA, with optional PCR | Revisit the word-embedding case using PCA. Examine how representation choices affect information and social associations, and why compression alone does not establish privacy or fairness. |
+| **10** | PCA and principal components regression (PCR)\* | Revisit the word-embedding case using PCA. Examine how representation choices affect information and social associations, and why compression alone does not establish privacy or fairness. |
 | **11** | Clustering | Connect the shopping and recommendation readings to customer segmentation. Examine how grouping choices affect treatment and why clusters should not be treated as fixed identities. |
 | **12** | Deep learning | Use smoking-status predictions and group error rates to examine uncertainty, privacy, unwanted interventions, human oversight, and monitoring after deployment. |
-| **13** | Transformer fine-tuning | Examine trust and privacy in license-plate redaction, including missed detections, residual disclosure, and possible surveillance uses. Distinguish redaction from differential privacy. |
+| **13** | Transformer fine-tuning | Examine trust and privacy in license-plate redaction, including missed detections, identifying information that remains after redaction, and possible surveillance uses. Distinguish redaction from differential privacy. |
+
+\* Marks optional Level 2 extensions in the Technical focus column.
 
 ### Frameworks for Human–AI Problem Solving
 
@@ -159,7 +161,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 
 - **[Tutorial 2 — Linear Regression Concepts and Modeling](Tutorials/Tutorial%202%20-%20Linear%20Regression%20Concepts%20and%20Modeling/Tutorial%202%20-%20Linear%20Regression%20Concepts%20and%20Modeling.ipynb)**  
   **Level 1:** Simple and Multiple Linear Regression  
-  **Level 2:** Cross-Validation and Model Critique  
+  **Level 2:** Cross-Validation and Model Diagnostics  
   Fit and interpret regression models, assess predictions, and connect the results to the research question.
 
 - **[Tutorial 3 — Forward and Backward Model Selection](Tutorials/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection/Tutorial%203%20-%20Forward%20and%20Backward%20Model%20Selection.ipynb)**  
@@ -181,12 +183,12 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 
 - **[Tutorial 6 — Naive Bayes](Tutorials/Tutorial%206%20-%20Naive%20Bayes/Tutorial%206%20-%20Naive%20Bayes.ipynb)**  
   **Level 1:** Gaussian Naive Bayes  
-  **Level 2:** Representations, Independence Assumptions, and Smoothing  
+  **Level 2:** Feature Representations, Conditional Independence, and Smoothing  
   Apply Bayes’ rule to classification and examine the assumption that predictors are conditionally independent given the class.
 
 - **[Tutorial 7 — K-Nearest Neighbors and Recommender Systems](Tutorials/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation/Tutorial%207%20-%20K-Nearest%20Neighbors%20and%20Movie%20Recommendation.ipynb)**  
   **Level 1:** KNN Movie Recommendations  
-  **Level 2:** Rating Filters, Distance Choice, and Stability  
+  **Level 2:** Filtering by Rating Count, Distance Choice, and Recommendation Stability  
   Build a movie recommender, inspect its outputs, and examine how representation and distance choices affect its recommendations.
 
 - **[Tutorial 8 — Decision Trees and Boosting](Tutorials/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting/Tutorial%208%20-%20Decision%20Trees%20and%20Boosting.ipynb)**  
@@ -195,8 +197,8 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
   Compare a decision tree with boosted ensembles and evaluate predictive performance alongside interpretability and error consequences.
 
 - **[Tutorial 9 — Support Vector Machines](Tutorials/Tutorial%209%20-%20Support%20Vector%20Machines/Tutorial%209%20-%20Support%20Vector%20Machines.ipynb)**  
-  **Level 1:** Linear SVMs and Kernel Methods  
-  **Level 2:** Hyperparameter Tuning and Group Error Audits  
+  **Level 1:** SVMs with Linear and RBF Kernels  
+  **Level 2:** Hyperparameter Tuning and Subgroup Error Analysis  
   Learn margins and support vectors, use kernels for nonlinear decision boundaries, and examine classification errors.
 
 ### Unsupervised learning
@@ -207,7 +209,7 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
   Reduce dimension and interpret retained variation. The optional extension uses component scores in regression and examines privacy limits.
 
 - **[Tutorial 11 — Unsupervised Learning and Clustering](Tutorials/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering/Tutorial%2011%20-%20Unsupervised%20Learning%20and%20Clustering.ipynb)**  
-  **Level 1:** K-Means Clustering, Profiling, and Stability  
+  **Level 1:** K-Means Clustering, Cluster Profiles, and Stability  
   **Level 2:** Hierarchical Clustering and Linkage Sensitivity  
   Compare ways to group observations without response labels and examine how preprocessing and modeling choices change the groups.
 
@@ -220,8 +222,8 @@ Each title links to its notebook. Complete Level 1 before attempting the optiona
 
 - **[Tutorial 13 — Transformer Fine-Tuning](Tutorials/Tutorial%2013%20-%20Transformer%20Fine-Tuning/Tutorial%2013%20-%20Transformer%20Fine-Tuning.ipynb)**  
   **Level 1:** License-Plate Detection and Image Redaction  
-  **Level 2:** Full-Data Training, External Evaluation, and Video Redaction Design  
-  Fine-tune a pretrained vision transformer, evaluate detections, and examine the privacy limits of automated redaction. Training requires a CUDA-capable GPU.
+  **Level 2:** Comparing Fine-Tuning Settings, External Evaluation, and Video Redaction Design  
+  Fine-tune a pretrained vision transformer, evaluate detections, and examine the privacy limits of automated redaction. The supplied training workflow requires a CUDA-capable GPU.
 
 ---
 
@@ -256,7 +258,7 @@ Download or clone the repository to preserve the notebook, data, and image folde
 ### Additional requirements
 
 - **Tutorial 0 Part 2:** The agent workflow uses Git, Python, and Codex in a terminal. Follow the notebook’s installation instructions and consult [OpenAI’s current Codex access guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for plan availability and limits. The notebook provides a manual ChatGPT workflow if Codex is unavailable.
-- **Tutorial 13:** Training requires a CUDA-capable GPU and internet access to download the model and dataset. A CPU can support data inspection and small checks. In Colab, select a GPU runtime before the setup cell and verify that CUDA is available.
+- **Tutorial 13:** The supplied training workflow requires a CUDA-capable GPU and internet access to download the model and dataset. A CPU can support data inspection and small checks. In Colab, select a GPU runtime before the setup cell and verify that CUDA is available.
 
 ---
 
