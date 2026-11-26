@@ -42,7 +42,7 @@ Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_
 
 Two complementary frameworks connect the work in each notebook to the decisions in an analytics project.
 
-**Pólya’s four-step cycle — Understand the Problem → Devise a Plan → Carry Out the Plan → Look Back — structures our work with AI.** The four colored gears mark these stages throughout the notebooks. Students return to earlier questions whenever new evidence changes their understanding or suggests a different plan.
+George Pólya’s [*How to Solve It: A New Aspect of Mathematical Method*](https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it) provides the problem-solving framework used throughout these tutorials: **Understand the Problem → Devise a Plan → Carry Out the Plan → Look Back**. We use this structure to make AI a collaborator in developing and testing ideas throughout the problem-solving process. The four colored gears mark these stages throughout the notebooks, and students return to earlier stages when new evidence changes their understanding or calls for a revised plan.
 
 The [**INFORMS Analytics Framework (IAF)**](https://www.informs.org/Professional-Development/INFORMS-Analytics-Framework) connects that reasoning to the wider project. Its seven domains cover the human or organizational problem, the analytical question, data, method selection, model development, deployment, and the continuing management of a solution. In our social-good projects, its term *business problem* refers to the community or organizational need and the decision we hope to improve.
 
@@ -51,7 +51,7 @@ The [**INFORMS Analytics Framework (IAF)**](https://www.informs.org/Professional
   <a href="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Seven_Domains.png"><img src="Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Seven_Domains.png" alt="The INFORMS Analytics Framework circle with seven connected domains: business problem framing, analytics problem framing, data, methodology selection, model development, deployment, and life cycle management." width="380" height="380"></a>
 </p>
 
-**We use Pólya’s cycle within any IAF domain.** The [Human–AI Problem Solving question sheet (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Human-AI%20Problem%20Solving.pdf) and [IAF Guiding Questions (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Guiding_Questions.pdf) help students structure a conversation with AI: clarify the problem, examine assumptions, compare alternatives, and identify a next step they can verify. Connect selected questions to the project’s evidence and constraints, then check the proposed answers.
+**We use Pólya’s cycle within any IAF domain.** The [Human–AI Problem Solving question sheet (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Human-AI%20Problem%20Solving.pdf) and [IAF Guiding Questions (PDF)](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/IAF_Guiding_Questions.pdf) guide students’ own reasoning and their conversations with AI: clarify the problem, examine assumptions, compare alternatives, and identify a next step they can verify. Connect selected questions to the project’s evidence and constraints, then check the proposed answers.
 
 The question sheets and **Human Checks** provide starting points. In their projects, students should draw on domain knowledge, consult people affected by the proposed solution, and add questions specific to their setting, while remaining responsible for checking AI suggestions and deciding how to act.
 
@@ -277,10 +277,13 @@ Use each AI task to advance one part of the problem, then check the result befor
 
 Before accepting an answer, check that it addresses the intended problem, uses the correct data and variables, and supports its claims with evidence. Explain why the method is appropriate and what its assumptions, limitations, and possible consequences mean in the application.
 
+In course projects, recommendations about real-world use should address benefits, harms, privacy, and ongoing monitoring, drawing on relevant domain expertise.
+
 ---
 
-## Responsible use
+## Course texts
 
-These notebooks are for learning, but the social-good questions are treated as part of the technical work. A model working well in a notebook does not automatically mean it should be used in a real decision that affects people.
+- **Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor.** [*An Introduction to Statistical Learning with Applications in Python*](https://www.statlearning.com/). Statistical learning concepts, methods, and Python applications. A free PDF is available from the authors’ website.
+- **Michael Kearns and Aaron Roth.** [*The Ethical Algorithm: The Science of Socially Aware Algorithm Design*](https://global.oup.com/academic/product/the-ethical-algorithm-9780190948207). Privacy, fairness, and the social consequences of algorithmic decisions.
 
-In project work, decisions about using a model should be supported by domain knowledge, evidence about benefits and harms, privacy protection, and a plan for monitoring its effects. When a Human Check raises a question beyond your expertise, identify the missing evidence or expertise and seek it before proceeding.
+Each notebook’s **Assigned Reading** section identifies the required selections, optional readings, and material revisited from earlier tutorials.
