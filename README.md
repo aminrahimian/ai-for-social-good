@@ -24,13 +24,15 @@ Across the series, students connect technical decisions—how a problem is defin
 
 ## Social-good applications by tutorial
 
+These connections are developed through coding activities, assigned readings, and guided discussion.
+
 | Tutorial | Technical focus | Social-good connection |
 |---|---|---|
 | **0** | Human–AI problem solving | Human-centered problem scoping, stakeholder knowledge, alternatives to AI, and learning from unintended consequences after deployment. |
-| **0 Part 2** | Agentic workflows and GitHub | Accountable public-interest software: least privilege, traceable changes, data governance, human approval, and rollback. |
+| **0 Part 2** | Agentic workflows and GitHub | Responsible AI-assisted development for social-good projects: limited permissions, documented and tested changes, protection of sensitive information, and human review and approval. |
 | **1** | Data wrangling and exploratory data analysis | Trustworthy civic/public-interest data: context, representation, missingness, limits of anonymization, data literacy, and community knowledge before modeling. |
 | **2** | Linear and multiple regression | Regression for health, housing, or resource questions while separating model fit from fairness, causality, and policy acceptability. |
-| **3** | Model selection and regularization\* | Feature choices affect predictions and the decisions based on them. Examine privacy, proxy variables, differences in prediction error across groups, feedback, and monitoring. |
+| **3** | Model selection and regularization\* | Compare group prediction errors before and after feature selection. Discuss privacy, proxy variables, and how decisions based on a model can influence future data. |
 | **4** | Logistic regression | Human-centered classification: thresholds, false positives/negatives, marginalized groups, explanation, appeal, and accountable use. |
 | **5** | A/B testing and advanced multiple-testing procedures\* | Examine how analytical choices affect the credibility of experimental findings, alongside ethical randomization, meaningful outcomes, unintended consequences, and replication. |
 | **6** | Naive Bayes | Use conditional probability to examine randomized response and sensitive inferences, then consider how predictions can support human decisions under uncertainty. |
