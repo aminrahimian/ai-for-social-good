@@ -12,6 +12,8 @@ The course supports the [Engineering Data Analytics Certificate](https://www.eng
 
 The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Part 2.
 
+**Recommended background:** Familiarity with basic algebra and introductory probability and statistics will help students follow the tutorials. Some experience reading and running Python code is useful, with guided prompts and reference solutions supporting the programming work. Prior machine-learning experience is not assumed. Later tutorials use vectors, matrices, and derivatives, which students may need to review alongside the assigned readings.
+
 **Start here:** [Tutorial 0](Tutorials/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude/Tutorial%200%20-%20Human-AI%20Problem%20Solving%20with%20Claude.ipynb) · [Tutorial guide](#tutorial-guide) · [Running the tutorials](#running-the-tutorials) · [Working with AI](#how-to-work-with-ai-in-the-tutorials)
 
 Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
