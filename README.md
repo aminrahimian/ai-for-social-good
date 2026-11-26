@@ -14,11 +14,7 @@ The series contains **15 Jupyter notebooks**: Tutorials 0–13 and Tutorial 0 Pa
 
 Across the series, students connect technical decisions—how a problem is defined, what data are collected, which variables are used, how a model is evaluated, and what happens when it is wrong—to social-good applications and responsible deployment.
 
-AI serves as a partner in reasoning and coding. Tutorial 0 introduces human–AI problem solving with Claude, and Tutorial 0 Part 2 develops an agentic GitHub workflow with ChatGPT and Codex. Students define the problem, set permissions, apply domain knowledge, verify the code and evidence, explain results, and remain responsible for the final decision.
-
 > **Main idea:** Learn the method, verify the result, and ask what the result means for people. AI can support the work, but human and domain judgment stay in control.
-
-Selected excerpts from Michael Kearns and Aaron Roth’s _The Ethical Algorithm_ provide a recurring foundation for privacy, fairness, bias, credible evidence, and real-world deployment. The tutorials identify core excerpts alongside optional further reading where those concepts support the technical method and social-good application.
 
 ---
 
